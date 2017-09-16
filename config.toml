@@ -1,0 +1,23 @@
+baseURL = "http://pianomanfrazier.github.io"
+title = "Ryan Frazier's Blog"
+languageCode = "en-us"
+author = "Ryan Frazier"
+canonifyurls = true
+theme = "black-and-light"
+
+pygmentsstyle = "bw"
+pygmentscodefences = true
+
+[params]
+	sitename = "Ryan Frazier's Blog"
+
+[[menu.main]]
+	name = "About"
+	url  = "/about"
+[[menu.main]]
+	name = "Projects"
+	url  = "https://github.com/pianomanfrazier"
+#[[menu.main]]
+#	name = "Resume"
+#	url  = "https://github.com/davidhampgonsalves/hugo-black-and-light-theme"
+
