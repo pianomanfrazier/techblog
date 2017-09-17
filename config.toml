@@ -5,7 +5,8 @@ author = "Ryan Frazier"
 canonifyurls = true
 theme = "black-and-light"
 
-pygmentsstyle = "bw"
+#pygmentsstyle = "bw"
+pygmentsstyle = "friendly"
 pygmentscodefences = true
 
 [params]

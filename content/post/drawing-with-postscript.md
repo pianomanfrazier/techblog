@@ -38,3 +38,82 @@ a b sub t cos mul a b sub t mul b div cos d mul add
 The thing to remember is that the amount of arguments that the function takes is the number of items it will pop off the stack. The result will then be pushed back to the stack. This will become even more important when writing functions.
 
 ## Lines, Squares, and Functions
+
+```postscript
+%!PS
+
+newpath %sets a drawing path
+200 200 moveto % moves drawing point (x,y) to (200,200)
+200 0 rlineto % draws a line relative to (200,200), so (400,200)
+1 0 0 setrgbcolor % set color to red
+closepath
+stroke
+```
+![Red Line](/img/postscript/line.png)
+
+```postscript
+%!PS
+
+% a function definition
+/box {
+    % the top of the stack will be the function parameter
+    % duplicate the top of the stack 3 times
+    dup dup dup
+    0 rlineto % consumes a duplicate
+    0 exch rlineto % swap 0 and top of stack
+    neg 0 rline to % negates and consumes the duplicate
+    neg 0 exch rlineto % negates, exchanges then consumes 3rd dup
+} def
+
+newpath
+1 0 1 setrgbcolor
+200 200 moveto
+50 rotate
+200 box % function call will 200 on the stack
+closepath
+stroke
+```
+![Purple Rotated Box](/img/postscript/line2.png)
+
+Now something a little bit wackier.
+
+```postscript
+%!PS
+
+0.5 0.5 scale
+
+/box {
+	dup dup dup
+	0 rlineto
+	0 exch rlineto
+	neg 0 rlineto
+	neg 0 exch rlineto
+} def
+
+% new function that wraps the box function
+% takes 4 parameters on the stack
+/mybox {
+gsave
+newpath
+0.5 setrgbcolor % param 1 & 2, colors changing in for loop
+400 400 moveto
+rotate % param 3
+box % param 4
+closepath
+stroke
+grestore
+} def
+
+%for loop
+% start increment end { ... } for
+10 5 360 {
+    % comments are as if first time through the loop
+    dup % param 4, copy 10 to stack
+    dup % param 3, copy 10 to stack
+    360 div % param 2, put 360 on stack, divide 10/360 put back on stack
+    dup % param 1, copy 10% of 360
+    mybox % needs 4 params on the stack
+} for
+```
+![Spiral Box](/img/postscript/spiral_box.png)
+
