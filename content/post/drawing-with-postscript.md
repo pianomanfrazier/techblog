@@ -184,11 +184,11 @@ a b sub t sin mul a b sub t mul b div sin d mul sub % y
 % y = sin t
 
 /box {
-	dup dup dup
-	0 rlineto
-	0 exch rlineto
-	neg 0 rlineto
-	neg 0 exch rlineto
+    dup dup dup
+    0 rlineto
+    0 exch rlineto
+    neg 0 rlineto
+    neg 0 exch rlineto
 } def
 
 % 3 params
@@ -210,49 +210,49 @@ grestore
 
 % takes one argument t
 /xpos {
-	dup % we need two t's, t1 & t2
-	a b sub exch
-	cos % consumes t1
-	mul exch
-	a b sub exch
-	mul % consumes t2
-	b div
-	cos d
-	mul
-	add % x
+    dup % we need two t's, t1 & t2
+    a b sub exch
+    cos % consumes t1
+    mul exch
+    a b sub exch
+    mul % consumes t2
+    b div
+    cos d
+    mul
+    add % x
 } def
 
 % takes one argument t
 /ypos {
-	dup % t1 & t2 on stack
-	a b sub exch
-	sin % consumes t1
-	mul exch
-	a b sub exch
-	mul % consumes t2
-	b div 
-	sin d 
-	mul 
-	sub % y
+    dup % t1 & t2 on stack
+    a b sub exch
+    sin % consumes t1
+    mul exch
+    a b sub exch
+    mul % consumes t2
+    b div 
+    sin d 
+    mul 
+    sub % y
 } def
 
 % 4 parameters
 % scale translateX translateY
 /star {
-	1 1 1080 {
-		%dup 360 exch
-		3 exch % size of boxes
-		dup xpos exch
-		dup ypos exch
-		dup
-		1080 div exch % divide red color by 720
-		dup
-		360 div exch % divide green by 720
-		pop
-		0 exch
-		%720 div % blue
-		mybox
-	} for
+    1 1 1080 {
+        %dup 360 exch
+        3 exch % size of boxes
+        dup xpos exch
+        dup ypos exch
+        dup
+        1080 div exch % divide red color by 720
+        dup
+        360 div exch % divide green by 720
+        pop
+        0 exch
+        %720 div % blue
+        mybox
+    } for
 } def
 
 300 300 translate
@@ -260,3 +260,25 @@ grestore
 star
 ```
 ![Parametric Star](/img/postscript/star.png)
+Try changing the variables `/a`, `/b`, and `/d` and see the different stars produces. You will also have to change how many times around the circle you have to go to complete the cycle.
+![Parametric Star](/img/postscript/star2.png)
+![Parametric Star](/img/postscript/star3.png)
+We can then redraw it and translate it in a loop.
+```postscript
+/a 70 def
+/b 30 def
+/d 50 def
+
+300 300 translate
+1 1 360 {
+    rotate
+    star
+} for
+
+/a 50 def
+/b 30 def
+/d 50 def
+
+star2
+```
+![Parametric Star](/img/postscript/star4.png)
