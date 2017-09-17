@@ -83,25 +83,25 @@ Now something a little bit wackier.
 0.5 0.5 scale
 
 /box {
-	dup dup dup
-	0 rlineto
-	0 exch rlineto
-	neg 0 rlineto
-	neg 0 exch rlineto
+    dup dup dup
+    0 rlineto
+    0 exch rlineto
+    neg 0 rlineto
+    neg 0 exch rlineto
 } def
 
 % new function that wraps the box function
 % takes 4 parameters on the stack
 /mybox {
-gsave
-newpath
-0.5 setrgbcolor % param 1 & 2, colors changing in for loop
-400 400 moveto
-rotate % param 3
-box % param 4
-closepath
-stroke
-grestore
+    gsave
+    newpath
+    0.5 setrgbcolor % param 1 & 2, colors changing in for loop
+    400 400 moveto
+    rotate % param 3
+    box % param 4
+    closepath
+    stroke
+    grestore
 } def
 
 %for loop
@@ -117,3 +117,146 @@ grestore
 ```
 ![Spiral Box](/img/postscript/spiral_box.png)
 
+## Parametric Equations
+
+```postscript
+%!PS
+
+% implement parametric equation a circle
+% x = t * cos t
+% y = t * sin t
+
+/box {
+    dup dup dup
+    0 rlineto
+    0 exch rlineto
+    neg 0 rlineto
+    neg 0 exch rlineto
+} def
+
+% 3 params
+% size of box, x, y, R 
+/mybox {
+    gsave
+    newpath
+    600 700 translate
+    setrgbcolor
+    moveto 
+    box
+    closepath
+    fill
+    grestore
+} def
+
+0.4 0.4 scale % fit on the page
+1 1 720 {
+    10 exch % size of boxes
+    dup
+    dup cos mul exch % x param, 1 * cos 1
+    dup
+    dup sin mul exch % y param, 1 * sin 1
+    dup
+    360 div exch % divide red color by 720
+    dup
+    720 div exch % divide green by 720
+    180 div % blue
+    mybox
+} for
+```
+![Spiral Parametric Equation](/img/postscript/parametric.png)
+
+### Hypotrochoid
+
+[Hypotrochoid](https://en.wikipedia.org/wiki/Hypotrochoid)
+
+Here are the two equations in stack form (i.e. RPN):
+
+```postscript
+a b sub t cos mul a b sub t mul b div cos d mul add % x
+a b sub t sin mul a b sub t mul b div sin d mul sub % y
+```
+
+```postscript
+%!PS
+
+% implement parametric equation a circle
+% x = cos t
+% y = sin t
+
+/box {
+	dup dup dup
+	0 rlineto
+	0 exch rlineto
+	neg 0 rlineto
+	neg 0 exch rlineto
+} def
+
+% 3 params
+% size of box, x, y, R 
+/mybox {
+gsave
+newpath
+setrgbcolor
+moveto 
+box
+closepath
+fill
+grestore
+} def
+
+/a 50 def
+/b 30 def
+/d 50 def
+
+% takes one argument t
+/xpos {
+	dup % we need two t's, t1 & t2
+	a b sub exch
+	cos % consumes t1
+	mul exch
+	a b sub exch
+	mul % consumes t2
+	b div
+	cos d
+	mul
+	add % x
+} def
+
+% takes one argument t
+/ypos {
+	dup % t1 & t2 on stack
+	a b sub exch
+	sin % consumes t1
+	mul exch
+	a b sub exch
+	mul % consumes t2
+	b div 
+	sin d 
+	mul 
+	sub % y
+} def
+
+% 4 parameters
+% scale translateX translateY
+/star {
+	1 1 1080 {
+		%dup 360 exch
+		3 exch % size of boxes
+		dup xpos exch
+		dup ypos exch
+		dup
+		1080 div exch % divide red color by 720
+		dup
+		360 div exch % divide green by 720
+		pop
+		0 exch
+		%720 div % blue
+		mybox
+	} for
+} def
+
+300 300 translate
+2 2 scale
+star
+```
+![Parametric Star](/img/postscript/star.png)
