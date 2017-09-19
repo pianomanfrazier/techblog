@@ -1,0 +1,98 @@
+---
+title: "Math Test"
+date: 2017-09-19T13:51:39-06:00
+draft: true
+---
+
+This is a test of KaTex and MMark.
+
+There are some big problems with MMark.
+
+- references don't work correctly at all. The hash goes to root of site. Not relative to page. Should get current path of page and inject in reference.
+- nested figures
+- Figure: caption for code blocks
+
+{mainmatter}
+
+## KaTex Test {#header}
+
+$$\pi_3 = \int_{0}^{\infty}$$
+
+Some inline math $$x = \sum_{0}^{10}{\left( \frac{12}{\sqrt{z}}x^2 \right)}$$. Isn't it great.
+
+{callout="#"}
+~~~python
+from math import * #<1>
+
+print(pi * sin(2)) #<2>
+~~~
+
+Here are some callouts to code <1>. And here is spot <2>.
+
+---
+
+Some text goes here. I am writing some example text.
+
+{#myquote}
+> Do or do not. There is no try.
+Quote:  -- Master Yoda
+
+Here is a table:
+
+{#table-caption}
+Name    | Age
+--------|-----:
+Bob     | 27
+Charlie | 4
+Alice   | 23
+
+
+{#mytable}
+Name    | Age
+--------|-----:
+Bob     | 27
+Charlie | 4
+Alice   | 23
+
+See my beautiful table^[<https://google.com>]. Don't use citations.
+
+See [@RFC2535 p. 23] or [label 1] or [my table](/post/math-test/#table-caption) here is the see [section](/post/math-test/#header).
+
+[label 1]: #header "A special table"
+
+- [ ] This is an incomplete task.
+- [x] This is done.
+
+a)  item 1
+b)  item 2
+
+Hello there.
+
+i)  roman 1
+ii)  roman 2
+
+Word.
+
+I)  upper
+II)  Romain
+
+More text here.
+
+F>![Alt text](http://thecatapi.com/api/images/get?format=src&type=gif "Optional title")
+Figure: This is a header caption
+
+
+{#codetag}
+<{{./data/test.go}}[address]
+
+A> This is an aside. Reference the [code](#codetag)
+
+Mmark
+: A Markdown-superset converter
+
+: A project on Github
+
+Black Friday
+:     Another Markdown-superset converter
+
+{backmatter}
