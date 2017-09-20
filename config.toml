@@ -11,6 +11,7 @@ pygmentscodefences = true
 
 [params]
 	sitename = "Ryan Frazier's Blog"
+	description = "The coding blog of Ryan Frazier. Notes, tips, and tricks."
 
 [[menu.main]]
 	name = "About"

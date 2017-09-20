@@ -6,11 +6,14 @@ draft: true
 
 This is a test of KaTex and MMark.
 
-There are some big problems with MMark.
-
-- references don't work correctly at all. The hash goes to root of site. Not relative to page. Should get current path of page and inject in reference.
 - nested figures
 - Figure: caption for code blocks
+
+Make sure the html base tag is set to the current page and not the root of the site. This will ensure relative hash links go to the right place.
+
+~~~text
+<base href={{ $.Page.Permalink }}>
+~~~
 
 {mainmatter}
 
@@ -39,26 +42,36 @@ Quote:  -- Master Yoda
 
 Here is a table:
 
-{#table-caption}
+{#table-id}
 Name    | Age
 --------|-----:
 Bob     | 27
 Charlie | 4
 Alice   | 23
+Table: Some dudes with ages
 
+(@Good)  list item
 
 {#mytable}
-Name    | Age
---------|-----:
-Bob     | 27
-Charlie | 4
-Alice   | 23
+Name    | Age | Birth | Phone | Address 
+--------|-----|-------|-------|--------:
+Bob     | 27  |  10/10/2017 | 123-4567 | 202 E. Davis St.  
+Charlie | 4   |  10/10/2017 | 123-4567 | 202 E. Davis St. 
+Alice   | 23  |  10/10/2017 | 123-4567 | 202 E. Davis St.  
+Table: This is my cool table
 
-See my beautiful table^[<https://google.com>]. Don't use citations.
+See my beautiful table[^1]. Don't use citations. See (@Good) list item.
 
-See [@RFC2535 p. 23] or [label 1] or [my table](/post/math-test/#table-caption) here is the see [section](/post/math-test/#header).
+[^1]: This is a long footnote description.
+
+(@Good)  Another item.
+
+See [@RFC2535 p. 23] or [label 1] or [what does this do][label 1] [my table](/post/math-test/#table-caption) here is the see [section](/post/math-test/#header).
 
 [label 1]: #header "A special table"
+
+
+Some text and here is this page's url.
 
 - [ ] This is an incomplete task.
 - [x] This is done.
@@ -79,7 +92,6 @@ II)  Romain
 More text here.
 
 F>![Alt text](http://thecatapi.com/api/images/get?format=src&type=gif "Optional title")
-Figure: This is a header caption
 
 
 {#codetag}
