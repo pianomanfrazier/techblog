@@ -14,3 +14,19 @@ And to leave hex mode
 ~~~vim
 :%!xxd -r
 ~~~
+
+That is good for viewing the file but not for editing. Use Bless to open the file and edit bytes.
+
+## PyCrypto
+
+This is a very quick way to play around with different Crypto Algorithms.
+
+To encode a bytes as all zeros, not the zero character, in python
+
+```python
+b"\0\0\0\0\0\0\0\0"
+```
+
+## Python Cryptography
+
+A newer and up to date crypto library. Has simple high level features as well as low level stuff in the `cryptography.hazmat` submodule.
