@@ -1,0 +1,16 @@
+---
+title: "Computer Security Notes"
+date: 2017-09-21T14:09:08-06:00
+draft: true
+---
+
+To edit a hex file in vim
+
+~~~vim
+:%!xxd
+~~~
+
+And to leave hex mode
+~~~vim
+:%!xxd -r
+~~~

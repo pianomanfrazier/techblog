@@ -23,10 +23,20 @@ $$\pi_3 = \int_{0}^{\infty}$$
 
 Some inline math $$x = \sum_{0}^{10}{\left( \frac{12}{\sqrt{z}}x^2 \right)}$$. Isn't it great.
 
+A> This is an aside. Let's see how I can style somelong tangent side note as a floating aside. I might even put an image in here. Some inline math $$x \equiv \frac{\alpha}{\sqrt{\beta}}$$.
+A>
+A> It looks pretty good to me.
+
+Bacon ipsum dolor amet frankfurter tongue ground round turducken pancetta kevin landjaeger cupim t-bone pork ham hock pig drumstick. Chicken leberkas rump hamburger turducken ribeye biltong kielbasa jerky pork chop corned beef shoulder porchetta short loin. Burgdoggen meatball landjaeger pancetta ball tip salami kielbasa sirloin tri-tip bresaola alcatra. Ribeye hamburger biltong jowl ball tip leberkas.
+
+Pastrami picanha shank bacon. Filet mignon boudin prosciutto doner pastrami strip steak swine ham pork. Ground round fatback meatloaf short ribs biltong, drumstick alcatra beef ribs chuck shoulder kevin. Alcatra swine prosciutto, salami pork sausage chicken capicola kevin pig. Turkey sausage kevin meatloaf venison beef swine cow t-bone fatback chicken landjaeger.
+
+Pastrami picanha shank bacon. Filet mignon boudin prosciutto doner pastrami strip steak swine ham pork. Ground round fatback meatloaf short ribs biltong, drumstick alcatra beef ribs chuck shoulder kevin. Alcatra swine prosciutto, salami pork sausage chicken capicola kevin pig. Turkey sausage kevin meatloaf venison beef swine cow t-bone fatback chicken landjaeger.
+
 {callout="#"}
 ~~~python
 from math import * #<1>
-
+print("This is a super duper really long string that should run over")
 print(pi * sin(2)) #<2>
 ~~~
 
@@ -62,11 +72,11 @@ Table: This is my cool table
 
 See my beautiful table[^1]. Don't use citations. See (@Good) list item.
 
-[^1]: This is a long footnote description.
+[^1]: This is a long footnote description. See https://google.com
 
 (@Good)  Another item.
 
-See [@RFC2535 p. 23] or [label 1] or [what does this do][label 1] [my table](/post/math-test/#table-caption) here is the see [section](/post/math-test/#header).
+See [@RFC2535 p. 23] or [label 1] or [what does this do][label 1] [my table](#table-id) here is the see [section](#mytable).
 
 [label 1]: #header "A special table"
 
@@ -94,8 +104,19 @@ More text here.
 F>![Alt text](http://thecatapi.com/api/images/get?format=src&type=gif "Optional title")
 
 
+From include from file.
 {#codetag}
-<{{./data/test.go}}[address]
+<{{./data/test.go}}[2,3]
+
+Inline code.
+~~~go
+a := 2
+tedious_code = boring_function()
+boring_function()
+// START OMIT
+interesting_code = fascinating_function()
+// END OMIT
+~~~
 
 A> This is an aside. Reference the [code](#codetag)
 
