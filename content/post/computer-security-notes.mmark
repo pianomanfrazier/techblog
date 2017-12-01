@@ -4,7 +4,9 @@ date: 2017-09-21T14:09:08-06:00
 draft: true
 ---
 
-To edit a hex file in vim
+These notes are a result of doing the Cyber Security lab.
+
+To view a hex file in vim
 
 ~~~vim
 :%!xxd
@@ -30,3 +32,5 @@ b"\0\0\0\0\0\0\0\0"
 ## Python Cryptography
 
 A newer and up to date crypto library. Has simple high level features as well as low level stuff in the `cryptography.hazmat` submodule.
+
+## How to confirm PKC7 Padding on OpenSSL
