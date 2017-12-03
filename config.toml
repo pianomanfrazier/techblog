@@ -6,7 +6,8 @@ canonifyurls = true
 theme = "black-and-light"
 
 #pygmentsstyle = "bw"
-pygmentsstyle = "friendly"
+#pygmentsstyle = "friendly"
+pygmentsstyle = "manni"
 pygmentscodefences = true
 
 [params]
