@@ -119,6 +119,8 @@ Now something a little bit wackier.
 
 ## Parametric Equations
 
+Now on to something even more complicated.
+
 ```postscript
 %!PS
 
@@ -165,6 +167,9 @@ Now something a little bit wackier.
 ```
 ![Spiral Parametric Equation](/img/postscript/parametric.png)
 
+I learned a lot about working directly with the stack working with PostScript. I also learned the dangers of global variables. The code is hard to reason about because function calls are totally dependant on the state of the stack.
+
+<!--
 ### Hypotrochoid
 
 [Hypotrochoid](https://en.wikipedia.org/wiki/Hypotrochoid)
@@ -282,3 +287,4 @@ We can then redraw it and translate it in a loop.
 star2
 ```
 ![Parametric Star](/img/postscript/star4.png)
+-->
