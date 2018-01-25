@@ -53,4 +53,8 @@ void loop() {
 }
 ~~~
 
+{{<figure title="Binary Counter Schematic" src="/img/binary_counter.png" caption="Binary Counter Schematic" style="max-width:500px">}}
+
 And [here](/files/binary_counter.ino) is the file to download.
+
+
