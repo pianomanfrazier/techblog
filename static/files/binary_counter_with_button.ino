@@ -1,3 +1,11 @@
+/** 
+ *  Author: Ryan Frazier
+ *  Date: Feb 3, 2018
+ *  
+ *  This is free and unencumbered software released into the public domain.
+ *
+**/
+
 const int N_PINS = 4;
 const int buttonPin = 9;
 
@@ -10,7 +18,7 @@ void setup() {
   for(int i=0; i < N_PINS; i++) {
     pinMode(pins[i], OUTPUT);
   } 
-  pinMode(buttonPin, INPUT);
+  pinMode(buttonPin, INPUT_PULLUP);
 }
 
 void loop() {

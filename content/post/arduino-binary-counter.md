@@ -72,7 +72,7 @@ void setup() {
   for(int i=0; i < N_PINS; i++) {
     pinMode(pins[i], OUTPUT);
   } 
-  pinMode(buttonPin, INPUT);
+  pinMode(buttonPin, INPUT_PULLUP);
 }
 
 void loop() {
