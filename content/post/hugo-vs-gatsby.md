@@ -75,7 +75,6 @@ One excellent feature of Gatsby is that is uses GraphQL to pull in data. To buil
 
 - GraphQL
 - turn blog into React web app
-- developer centric
 - super fast website out of the box
 
 ### Cons
@@ -101,11 +100,10 @@ Hugo also includes an extended markdown parser called mmark. It allows for table
 - shortcodes
 - mmark
 - awesome CLI
-- [lots of themes](https://themes.gohugo.io/) Download a themes and start blogging.
+- [lots of themes](https://themes.gohugo.io/) Download a theme and start blogging.
 
 ### Cons
 
-- somewhat developer centric. Requires some tech savvy-ness to edit markdown files and publish with git.
 - Go templates somewhat painful
 
 ## Conclusion
