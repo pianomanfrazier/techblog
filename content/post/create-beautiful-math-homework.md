@@ -12,13 +12,13 @@ For my homework I have written a script that reads a config file for the class I
 Here are some highlights.
 
 F>![Poisson distribution](/img/math_homework/poisson.svg)
-Figure: Poisson distribution
+Figure: Poisson distribution where $$ \lambda = 10 $$
 
 F>![Lognormal Distribution](/img/math_homework/lognorm.svg)
-Figure: Lognormal distribution $$\frac{1}{\sigma x \sqrt{2 \pi}} e^{- (\ln x - \mu)^2 / 2 \sigma^2 }$$ 
+Figure: Lognormal distribution $$ f(x) = \frac{1}{\sigma x \sqrt{2 \pi}} e^{- (\ln x - \mu)^2 / 2 \sigma^2 }$$ 
 
 F>![Normal Distribution of Velocity of a Particle](/img/math_homework/velocity.svg)
-Figure: Normal Distribtuion of the Velocity of a Particle
+Figure: Normal Distribtuion of the Velocity of a Particle $$ f(x) = 2 \frac{mv}{\sigma \sqrt{2 \pi}} e^{- ( \frac{1}{2} mv^2 - \mu)^2 / 2 \sigma ^2} $$
 
 F>![CDF](/img/math_homework/prob14.svg)
-Figure: Plot of $$f_{XY}(x,y) = x e^{-x(y+1)}$$. 
+Figure: Plot of a Bivariate Distribution $$f_{XY}(x,y) = x e^{-x(y+1)}$$.
