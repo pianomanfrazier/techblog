@@ -52,7 +52,7 @@ void loop() {
   if (mask > 15) mask = 0;
 }
 ~~~
-[[download file]](/files/binary_counter.ino)
+[[download file]](/files/arduino/binary_counter.ino)
 
 {{<figure title="Binary Counter Schematic" src="/img/binary_counter.png" caption="Binary Counter Schematic">}}
 
@@ -88,7 +88,7 @@ void loop() {
   }
 }
 ~~~
-[[download file]](/files/binary_counter_with_button.ino)
+[[download file]](/files/arduino/binary_counter_with_button.ino)
 
 {{<figure title="Binary Counter Schematic with button" src="/img/binary_counter_with_button.png" caption="Binary Counter with Button Schematic">}}
 

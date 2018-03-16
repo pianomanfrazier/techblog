@@ -23,5 +23,5 @@ ax.set_xlabel('X Axis')
 ax.set_ylabel('Y Axis')
 ax.set_zlabel(r'$\displaystyle f_{X,Y}(x,y)$')
 
-plt.show()
-#plt.savefig('figures/prob14.png', dpi=200)
+#plt.show()
+plt.savefig('figures/bivariate.svg')
