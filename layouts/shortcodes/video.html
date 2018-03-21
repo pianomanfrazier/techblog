@@ -1,4 +1,4 @@
-<video style="width:100%" controls {{ if .Get "loop" }} loop {{end}}{{ if .Get "autoplay" }} autoplay {{end}}>
+<video controls {{ if .Get "loop" }} loop {{end}}{{ if .Get "autoplay" }} autoplay {{end}}>
   <source src="{{ .Get "src" }}" type="video/{{ .Get "type" }}"/>
   Your browser does not support this video.
 </video>
