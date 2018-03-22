@@ -31,3 +31,7 @@ Figure: Normal Distribution of the Velocity of a Particle $$ f(x) = 2 \frac{mv}{
 F>![CDF](/img/math_homework/bivariate.svg)
 Figure: Plot of a Bivariate Distribution $$f_{XY}(x,y) = x e^{-x(y+1)}$$.
 <br>[[download bivariate.py]](/files/plots/bivariate.py)
+
+And just for fun let's plot a torus and make a video out of it. [[download torus.py]](/files/plots/torus.py)
+
+{{< video src="/video/torus.mp4" type="mp4" loop="true" autoplay="true">}}
