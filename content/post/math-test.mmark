@@ -2,6 +2,7 @@
 title: "Math Test"
 date: 2017-09-19T13:51:39-06:00
 draft: true
+hasMath: true
 ---
 
 This is a test of KaTex and MMark.

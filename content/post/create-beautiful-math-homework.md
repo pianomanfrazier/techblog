@@ -3,6 +3,7 @@ title= "Create Beautiful Math Homework"
 date= 2018-03-15T12:04:46-06:00
 draft= false
 markup= "mmark"
+hasMath= true
 +++
 
 Throughout my Computer Science degree I have been doing a lot my homework in Latex. It has a learning curve but the results are amazing. For my probability class this semester I have also wanted to produce graphs and charts. I have been using the python libraries [matplotlib](https://matplotlib.org) and [seaborn](https://seaborn.pydata.org/index.html) to create awesome graphs. My homework often looks better than my textbook.
