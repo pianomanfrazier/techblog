@@ -20,6 +20,11 @@ F>![Lognormal Distribution](/img/math_homework/lognorm.svg)
 Figure: Lognormal Distribution $$ f(x) = \frac{1}{\sigma x \sqrt{2 \pi}} e^{- (\ln x - \mu)^2 / 2 \sigma^2 }$$ 
 <br>[[download lognorm.py]](/files/plots/lognorm.py)
 
+Using [moviepy](https://zulko.github.io/moviepy/) we can create a nice video of this graph where $$\sigma$$ varies over time.
+[[download lognorm_video.py]](/files/plots/lognorm_video.py)
+
+{{< video src="/video/lognormal.mp4" type="mp4" loop="true" autoplay="true">}}
+
 F>![Normal Distribution of Velocity of a Particle](/img/math_homework/velocity.svg)
 Figure: Normal Distribution of the Velocity of a Particle $$ f(x) = 2 \frac{mv}{\sigma \sqrt{2 \pi}} e^{- ( \frac{1}{2} mv^2 - \mu)^2 / 2 \sigma ^2} $$
 <br>[[download velocity.py]](/files/plots/velocity.py)
@@ -27,3 +32,7 @@ Figure: Normal Distribution of the Velocity of a Particle $$ f(x) = 2 \frac{mv}{
 F>![CDF](/img/math_homework/bivariate.svg)
 Figure: Plot of a Bivariate Distribution $$f_{XY}(x,y) = x e^{-x(y+1)}$$.
 <br>[[download bivariate.py]](/files/plots/bivariate.py)
+
+And just for fun let's plot a torus and make a video out of it. [[download torus.py]](/files/plots/torus.py)
+
+{{< video src="/video/torus.mp4" type="mp4" loop="true" autoplay="true">}}
