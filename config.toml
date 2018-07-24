@@ -3,6 +3,7 @@ title = "Ryan Frazier's Blog"
 languageCode = "en-us"
 author = "Ryan Frazier"
 canonifyurls = true
+enableEmoji = true
 theme = "black-and-light"
 
 #pygmentsstyle = "bw"
@@ -13,7 +14,7 @@ pygmentscodefences = true
 [params]
 	sitename = "Ryan Frazier's Blog"
 	description = "The coding blog of Ryan Frazier. Notes, tips, and tricks."
-  dateform = "January 2, 2006"
+	dateform = "January 2, 2006"
 
 [[menu.main]]
 	name = "About"
