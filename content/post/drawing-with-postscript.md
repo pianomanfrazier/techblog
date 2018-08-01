@@ -4,7 +4,7 @@ date: 2017-09-16T12:03:58-06:00
 draft: false
 ---
 
-Some notes about drawing with PostScript. The documentation is pretty sparse out on the web. Here I will document some basic usage to get you drawing more than just a couple of squares.
+For my programming languages class we started out by drawing pictures with Postscript. Since the documentation on how to do basic tasks is sparse on the internet I decided to jot down some of my explorations in the language. This should get anyone started drawing more than just a few squares.
 
 ## Getting started
 
@@ -167,9 +167,6 @@ Now on to something even more complicated.
 ```
 ![Spiral Parametric Equation](/img/postscript/parametric.png)
 
-I learned a lot about working directly with the stack working with PostScript. I also learned the dangers of global variables. The code is hard to reason about because function calls are totally dependant on the state of the stack.
-
-<!--
 ### Hypotrochoid
 
 [Hypotrochoid](https://en.wikipedia.org/wiki/Hypotrochoid)
@@ -287,4 +284,8 @@ We can then redraw it and translate it in a loop.
 star2
 ```
 ![Parametric Star](/img/postscript/star4.png)
--->
+
+## Conclusion
+
+I learned a lot about working directly with the stack working with PostScript. I also learned the dangers of global variables. The code is hard to reason about because function calls are totally dependant on the state of the stack.
+

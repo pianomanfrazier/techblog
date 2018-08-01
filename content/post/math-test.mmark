@@ -105,10 +105,6 @@ More text here.
 F>![Alt text](http://thecatapi.com/api/images/get?format=src&type=gif "Optional title")
 
 
-From include from file.
-{#codetag}
-<{{./data/test.go}}[2,3]
-
 Inline code.
 ~~~go
 a := 2

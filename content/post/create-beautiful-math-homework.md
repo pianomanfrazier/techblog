@@ -6,11 +6,15 @@ markup= "mmark"
 hasMath= true
 +++
 
-Throughout my Computer Science degree I have been doing a lot my homework in Latex. It has a learning curve but the results are amazing. For my probability class this semester I have also wanted to produce graphs and charts. I have been using the python libraries [matplotlib](https://matplotlib.org) and [seaborn](https://seaborn.pydata.org/index.html) to create awesome graphs. My homework often looks better than my textbook.
+Throughout my Computer Science degree I have been doing a lot my homework in Latex. It has a steep learning curve but the results are amazing.
 
-For my homework I have also written a script that reads a config file for the class I am in that has data like the teacher, semester, class name and so forth and generates a new Latex project with a makefile. I have been using this system for 2 semesters and it has been working great. See [homework-generator](https://github.com/pianomanfrazier/homework-generator).
+For my technical writing class I convinced my group to use Latex instead of Word or Google Docs. In hindsight this created a lot of extra work for me but I learned a lot about customizing a Latex document. See [here](https://github.com/pianomanfrazier/ENGR_3080_latex) for the Latex template I generated. The things I really liked about this setup was the ability to modularize the document and assign different team members a section. We then collaborated on the document using https://www.overleaf.com. Overleaf has git integration so I could edit the document on my laptop and push the changes back up to overleaf. The downside to this was that my other team members were not programmers and did not know how to use git and had to use the web interface for editing. Generating and managing the bibliography was also very easy using Bibliotex.
 
-Here are some highlights of the graphs I did for my homework. The visualizations sure helped figure out what was going on.
+For my personal homework I have written a script that reads a config file for the class I am in that has data like the teacher, semester, class name and so forth and generates a new Latex project with a makefile. I have been using this system for 2 semesters and it has been working great. See [homework-generator](https://github.com/pianomanfrazier/homework-generator).
+
+For my probability class this semester I have also wanted to produce graphs and charts. I have been using the python libraries [matplotlib](https://matplotlib.org) and [seaborn](https://seaborn.pydata.org/index.html) to create awesome graphs. My homework often looks better than my textbook.
+
+Here are some highlights of the graphs I did for my homework. The visualizations helped me see what was going on with the math.
 
 F>![Poisson distribution](/img/math_homework/poisson.svg)
 Figure: Poisson Distribution where $$ \lambda = 10 $$ 
