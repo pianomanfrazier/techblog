@@ -13,7 +13,7 @@ pygmentscodefences = true
 
 [params]
 	sitename = "Ryan Frazier's Blog"
-	description = "The coding blog of Ryan Frazier. Notes, tips, and tricks."
+	description = "Ramblings of Ryan Frazier: Programmer, Musician, and Educator"
 	dateform = "January 2, 2006"
 
 [[menu.main]]
@@ -22,7 +22,7 @@ pygmentscodefences = true
 [[menu.main]]
 	name = "Projects"
 	url  = "https://github.com/pianomanfrazier"
-#[[menu.main]]
-#	name = "Resume"
-#	url  = "https://github.com/davidhampgonsalves/hugo-black-and-light-theme"
+[[menu.main]]
+    name = "RSS"
+    url  = "/index.xml"
 
