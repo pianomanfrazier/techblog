@@ -1,0 +1,7 @@
+<div id="embedElm"></div>
+<script src="{{ .Get "src" }}"></script>
+<script>
+    var app = Elm.Main.init({
+        node: document.getElementById('embedElm')
+    });
+</script>
