@@ -15,7 +15,7 @@ Once those 2 things were in place I could do something like the following:
 
 {{< embedElm src="/js/seventh_flashcards.min.js" >}}
 
-## Why I chose Elm
+## Why I Chose Elm
 
 I had dabbled into Elm prior to starting this project, but with the release of Elm 0.19 I decided to try to write something substantial in Elm. I wanted to write a single page application (SPA) and needed front end routing. I got confused with routing in Elm 0.18 but with the release of 0.19 the routing module was greatly improved.
 
