@@ -43,7 +43,7 @@ type Accidental
     | DoubleFlat
 ```
 
-In the render engine I can use case matching to provide a rendering for the sharps:
+In the render engine I can use case matching to provide a rendering for the accidentals:
 
 ```Elm
 
