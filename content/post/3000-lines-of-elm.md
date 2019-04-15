@@ -5,11 +5,11 @@ draft = false
 markup = "mmark"
 +++
 
-I have been spending a lot of time lately working on a side project for learning and teaching music theory. The idea is that it combines short video tutorials followed by music theory exercises, kind of like Khan Academy combined with Duo Lingo.
+I have been spending a lot of time lately working on a side project for learning and teaching music theory. The app combines short video tutorials followed by music theory exercises. Like Khan Academy combined with Duo Lingo.
 
-I needed several things in place before I could write an application around music theory. I needed a music **theory engine**. The engine would allow me to ask things like, "Given a note what is the note a Major 6^th^ above?"
+I needed several things in place before I could write an application around music theory. I needed a music **theory engine**. The engine would allow me to ask things like, "Given a note what is the note a Major 6th above?"
 
-I also needed a **rendering engine**. There are several other projects that render music in the browser, like [VexFlow](http://www.vexflow.com/), but I needed a small package that would only do a limited number of things. I did not need to render a whole sheet of music to the browser. I only needed some intervals, chords, key signatures and such. Since SVG is now [widely supported](https://caniuse.com/#search=svg) I wanted something lean that would render SVG only. Elm's SVG package was a perfect fit. 
+I also needed a **rendering engine**. There are several other projects that render music in the browser, like [VexFlow](http://www.vexflow.com/). I needed a small package that would only do a limited number of things. I did not need to render a whole sheet of music to the browser. I only needed some intervals, chords, key signatures and such. Since SVG is now [widely supported](https://caniuse.com/#search=svg) I wanted something lean that would render SVG only. Elm's SVG package was a perfect fit.
 
 Once those 2 things were in place I could do something like the following:
 
@@ -17,9 +17,9 @@ Once those 2 things were in place I could do something like the following:
 
 ## Why I Chose Elm
 
-I had dabbled into Elm prior to starting this project, but with the release of Elm 0.19 I decided to try to write something substantial in Elm. I wanted to write a single page application (SPA) and needed front end routing. I got confused with routing in Elm 0.18 but with the release of 0.19 the routing module was greatly improved.
+I had dabbled into Elm before starting this project. With the release of Elm 0.19, I decided to try to write something substantial in Elm. I wanted to write a single page application (SPA) and needed front end routing. I got confused with routing in Elm 0.18 but with Elm 0.19 the routing module seemed easier to use.
 
-I started with the **Theory Engine**. Throughout the whole process I wrote unit tests with Elm Test. When I was finished I had something that just worked. I wrote the engine several months ago and have not had to touch the core logic since. Drawing inspiration from [Making Impossible States Impossible](https://youtu.be/IcgmSRJHu_8) I modeled everything in Types. Coming from imperative languages this was a totally new thing for me. My Note looked like the following:
+I started with the **theory engine**. Throughout the whole process, I wrote unit tests with Elm Test. When I finished I had something that just worked. I wrote the engine several months ago and have not had to touch the core logic since. Drawing inspiration from [Making Impossible States Impossible](https://youtu.be/IcgmSRJHu_8) I modeled everything in Types. Coming from imperative languages this was a new thing for me. My Note looked like the following:
 
 ```Elm
 type alias Note =
@@ -46,7 +46,6 @@ type Accidental
 In the render engine I can use case matching to provide a rendering for the accidentals:
 
 ```Elm
-
 renderAccidental : Accidental -> Svg msg
 renderAccidental accidental =
     case accidental of
@@ -59,17 +58,14 @@ renderAccidental accidental =
         ...
 ```
 
-Several years ago I had forked a previous Python project [Mingus](https://github.com/bspaans/python-mingus). I had augmented the project to use theory in a more sematic way. For example in Mingus there were no perfect intervals only major and minor. In actual music theory there is no such thing as a major 5^th^, only perfect, diminished, and augmented 5^th^s. I worked at it for a couple of weeks but was unsatisfied with how it worked.
+Several years ago I had forked a previous Python project [Mingus](https://github.com/bspaans/python-mingus). I had augmented the project to use theory in a more semantic way. For example, in Mingus, there were no perfect intervals only major and minor. In actual music theory there is no such thing as a major 5^th^, only perfect, diminished, and augmented 5^th^s. I worked at it for a couple of weeks but did not like how it worked.
 
-The functionality of my new theory engine is very similar to the Mingus theory engine but I feel the modelling of the domain as types is much more readable and maintainable. The Elm compiler is always there guiding me through.
-
-
+Compared to Python, the modeling of the domain as types is much more readable. The Elm compiler is always there guiding me through.
 
 ## What I've Learned
 
-Writing in a pure functional language has taught me a lot. I has given me a paradigm shift in how I write all code. When I write Java at my current job I am much more aware of side effects and try to minimize (or remove if possible) side effects from my functions.
+Writing in a pure functional language has taught me a lot. It has given me a paradigm shift in how I write all code. When I write Java at my current job I am more aware of side effects. I try to cut (or remove if possible) side effects from my functions.
 
-I try to break down problems into smaller problems that can be solved using simple functions. This has several benefits. The code is easier to reason about. It is easier to test. It is easier to debug.
+I try to break down problems into simple composable functions. This has several benefits. The code is easier to reason about. It is easier to test. It is easier to debug.
 
-If all goes well I should have something to release by this summer.
-
+If all goes well, my theory app should be ready to release by this summer.
