@@ -1,7 +1,7 @@
 +++
 title = "Thoughts on Interviews"
-date = 2018-07-24T16:47:32-06:00
-draft = true
+date = 2018-11-24T16:47:32-06:00
+draft = false
 markup = "mmark"
 +++
 

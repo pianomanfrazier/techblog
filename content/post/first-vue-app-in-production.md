@@ -1,7 +1,7 @@
 +++
 title = "First Vue App in Production"
-date = 2018-07-24T17:08:05-06:00
-draft = true
+date = 2018-09-24T17:08:05-06:00
+draft = false
 markup = "mmark"
 +++
 
