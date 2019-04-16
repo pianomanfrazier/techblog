@@ -46,7 +46,6 @@ type Accidental
 In the render engine I can use case matching to provide a rendering for the accidentals:
 
 ```Elm
-
 renderAccidental : Accidental -> Svg msg
 renderAccidental accidental =
     case accidental of
