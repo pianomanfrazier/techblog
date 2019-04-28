@@ -1,4 +1,4 @@
-baseURL = "http://pianomanfrazier.com" #TODO: change to https when available
+baseURL = "https://pianomanfrazier.com"
 title = "Ryan Frazier's Blog"
 languageCode = "en-us"
 author = "Ryan Frazier"
