@@ -1,4 +1,4 @@
-baseURL = "https://pianomanfrazier.netlify.com"
+baseURL = "http://pianomanfrazier.com" #TODO: change to https when available
 title = "Ryan Frazier's Blog"
 languageCode = "en-us"
 author = "Ryan Frazier"
