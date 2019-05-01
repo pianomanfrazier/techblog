@@ -40,5 +40,5 @@ My first experiment was to use the SVG module in Elm. I ripped out the SVG outpu
 
 {{< embedMultipleElm node="harmony" module="Harmony" >}}
 
-
+# Single Page Application
 
