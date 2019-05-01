@@ -1,0 +1,8 @@
+<div id='{{ .Get "node" }}'></div>
+<script>
+    var embedNode = document.getElementById('{{ .Get "node" }}');
+    var app = eval("Elm." + {{ .Get "module" }});
+    app.init({
+        node: embedNode
+    });
+</script>

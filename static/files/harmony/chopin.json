@@ -1,0 +1,41 @@
+{
+  "problems": [
+    {
+      "position": {
+        "x" : 20,
+        "y" : 0
+      },
+      "width" : 40,
+      "height": 133,
+      "type": "key"
+    },
+    {
+      "position": {
+        "x" : 95,
+        "y" : 0
+      },
+      "width" : 40,
+      "height": 133,
+      "type": "chord"
+    },
+    {
+      "position": {
+        "x" : 160,
+        "y" : 0
+      },
+      "width" : 40,
+      "height": 133,
+      "type": "chord"
+    },
+    {
+      "position": {
+        "x" : 275,
+        "y" : 0
+      },
+      "width" : 128,
+      "height": 133,
+      "type": "figure"
+    }
+  ],
+  "imagepath": "/files/harmony/chopin.svg"
+}
