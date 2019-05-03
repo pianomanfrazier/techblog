@@ -1,0 +1,16 @@
+<!DOCTYPE html><html lang='en-us'><head><meta name='viewport' content='width=device-width, initial-scale=1.0'><title>LilyPond Source</title></head><body><pre>
+<code class="language_lilypond"><span style="font-weight: bold;">\score</span><span style="font-weight: bold;">{
+  </span><span style="color: #0000c0; font-weight: bold;">\relative</span> c' <span style="font-weight: bold;">{
+    </span><span style="color: #0000c0; font-weight: bold;">\clef</span> <span style="color: #0000ff;">treble
+    </span><span style="color: #0000c0; font-weight: bold;">\time</span> <span style="color: #808000;">8/4
+    </span><span style="font-weight: bold;">\override</span> <span style="font-weight: bold;">Staff</span><span style="font-weight: bold;">.</span><span style="color: #c000c0;">TimeSignature</span> #'stencil = ##f
+    &lt;<span style="font-weight: bold;">\tweak</span> <span style="color: #0000ff;">color</span> #<span style="color: #0000ff;">red</span> a c e g&gt;
+    &lt;<span style="font-weight: bold;">\tweak</span> <span style="color: #0000ff;">color</span> #<span style="color: #0000ff;">red</span> b d f a&gt;
+    &lt;<span style="font-weight: bold;">\tweak</span> <span style="color: #0000ff;">color</span> #<span style="color: #0000ff;">green</span> c e g b&gt;
+    &lt;d' f a <span style="font-weight: bold;">\tweak</span> <span style="color: #0000ff;">color</span> #<span style="color: #0000ff;">green</span> c&gt;
+    &lt;e g b <span style="font-weight: bold;">\tweak</span> <span style="color: #0000ff;">color</span> #<span style="color: #0000ff;">red</span> d&gt;
+    &lt;f a c <span style="font-weight: bold;">\tweak</span> <span style="color: #0000ff;">color</span> #<span style="color: #0000ff;">red</span> e&gt;
+  <span style="font-weight: bold;">}
+  </span><span style="font-weight: bold;">\layout</span><span style="font-weight: bold;">{}
+}
+</span></code></pre></body></html>

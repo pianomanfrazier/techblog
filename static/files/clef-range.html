@@ -1,0 +1,111 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+<title>./templates/clef_range.ly</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+.language_lilypond {
+  
+}
+
+/* base styles */
+.comment {
+  color: #808080;
+  font-style: italic;
+}
+
+.error {
+  color: #ff0000;
+  text-decoration: underline;
+  text-decoration-color: #ff0000;
+}
+
+.escape {
+  color: #008080;
+}
+
+.function {
+  color: #0000c0;
+  font-weight: bold;
+}
+
+.keyword {
+  font-weight: bold;
+}
+
+.string {
+  color: #c00000;
+}
+
+.value {
+  color: #808000;
+}
+
+.variable {
+  color: #0000ff;
+}
+
+/* mode: lilypond */
+span.lilypond-articulation {
+  color: #ff8000;
+  font-weight: bold;
+}
+
+span.lilypond-context {
+  font-weight: bold;
+}
+
+span.lilypond-duration {
+  color: #008080;
+}
+
+span.lilypond-dynamic {
+  color: #ff8000;
+  font-weight: bold;
+}
+
+span.lilypond-fingering {
+  color: #ff8000;
+}
+
+span.lilypond-grob {
+  color: #c000c0;
+}
+
+span.lilypond-lyricmode {
+  color: #006000;
+}
+
+span.lilypond-lyrictext {
+  color: #006000;
+}
+
+span.lilypond-markup {
+  color: #008000;
+  font-weight: normal;
+}
+
+span.lilypond-slur {
+  font-weight: bold;
+}
+
+span.lilypond-stringnumber {
+  color: #ff8000;
+}
+
+</style>
+</head>
+<body>
+<code class="language_lilypond"><span class="lilypond-keyword keyword">\score</span><span class="lilypond-delimiter keyword">{
+  </span><span class="lilypond-command function">\relative</span> <span class="lilypond-pitch">c</span><span class="lilypond-octave">'</span> <span class="lilypond-delimiter keyword">{
+    </span><span class="lilypond-command function">\clef</span> <span class="lilypond-specifier variable">treble
+    </span><span class="lilypond-command function">\time</span> <span class="lilypond-value value">16/4
+    </span><span class="lilypond-keyword keyword">\override</span> <span class="lilypond-context">Staff</span><span class="lilypond-delimiter keyword">.</span><span class="lilypond-grob">TimeSignature</span> <span class="scheme-scheme">#'stencil</span> = <span class="scheme-scheme">##f
+    </span><span class="lilypond-pitch">c</span> <span class="lilypond-command function">\glissando</span> <span class="lilypond-pitch">d</span><span class="lilypond-octave">'
+    </span><span class="lilypond-keyword keyword">\tweak</span> <span class="lilypond-variable variable">color</span> <span class="scheme-scheme">#</span><span class="scheme-variable variable">red</span> <span class="lilypond-pitch">e
+    </span><span class="lilypond-command function">\glissando
+    </span><span class="lilypond-keyword keyword">\tweak</span> <span class="lilypond-variable variable">color</span> <span class="scheme-scheme">#</span><span class="scheme-variable variable">red</span> <span class="lilypond-pitch">c</span><span class="lilypond-octave">'
+  </span><span class="lilypond-delimiter keyword">}
+  </span><span class="lilypond-keyword keyword">\layout</span><span class="lilypond-delimiter keyword">{}
+}
+</span></code></body>
+</html>

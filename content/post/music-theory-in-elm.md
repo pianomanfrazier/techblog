@@ -1,11 +1,15 @@
 +++
 title = "Music Theory in Elm"
 date = 2019-04-13T16:35:55-06:00
-draft = true
+draft = false
 markup = "mmark"
 +++
 
 Lately I have been working on a music theory learning app. The app combines short video tutorials with music theory exercises, think Khan Academy combined with Duo Lingo.
+
+In this post I am going to discuss my previous work with music computation libraries. I then discuss how Elm solves some of the problems I've had with my previous approaches. Using Elm's type system I can leverage the compiler as well as make more readable code. I finish by discussing how I generate random notes and chords using Elm's [random](https://package.elm-lang.org/packages/elm/random/latest/) package.
+
+## A Theory Engine
 
 Several things needed to be in place before I could write an application around music theory. I needed a music **theory engine**. The engine would allow me to ask things like, "What is a major 6^th^ above a given note?" or "What are the notes of an A major 7^th^ chord in 1^st^ inversion?"
 
@@ -23,7 +27,7 @@ Several years ago I had forked a previous Python project [Mingus](https://github
 
 Compared to Python, the modeling of the domain as types in Elm is much more readable. Most music theory APIs make use of parsing strings to describe things, like `Music.note('a4')` or `Music.note('a4').chord('maj7')`. In Elm I can describe notes, chords, inversion, *etc.* all in types like `getSeventhChord (Note A 4 Natural) Maj7`.
 
-## Why I Chose Elm
+## Designing With Elm Types 
 
 I dabbled into Elm before starting this project. I got confused with routing in Elm 0.18, but the routing module of Elm 0.19 was easier to use. With the release of Elm 0.19, I decided to try to write a single page application (SPA) in Elm.
 
@@ -66,17 +70,23 @@ renderAccidental accidental =
         ...
 ```
 
-## Experiments Beget Experiments
+## Generating Random Notes
 
-> The journey of a thousand miles begins with a single step.
-Quote: -- Lao Tzu
+The flow of doing [random](https://package.elm-lang.org/packages/elm/random/latest/) stuff in Elm is much different than JavaScript. You ask the Elm runtime to perform a Command. Once you get used to it, the mindset is really powerful.
 
-My first experiement doing music in the browser what to draw an a note using SVG in Elm. That went well so I tried to make random notes. This required that I learned how [Random](https://package.elm-lang.org/packages/elm/random/latest/) works in Elm. Using messages I could trigger getting random things like
+This way of generating random things is especially useful for doing music exercises. When generating music stuff there is often an order of operations. I need one random thing before I can compute the next random thing. For example:
 
 - get random clef
-- now get a random note
+- now get a random note from the note range of that clef
 
 ```elm
+view : Model -> Html Msg
+view model =
+  ...
+  button
+    [ onClick GetRandomClef ]
+    [ text "Next Note" ]
+
 update : Msg -> Model -> (Model, Cmd Msg)
 update msg model =
     case msg of
@@ -103,6 +113,34 @@ update msg model =
             ( { model | note = note }, Cmd.none )
 ```
 
-This flow of getting random things worked great because in order to get a random note I first needed to get the clef. Once I had the clef I can then select a note from possible notes in that clefs range.
+## Random Chords
 
-Now that I had random note flashcards, I now thought about generating random intervals and chords. In order to do this I needed a **theory engine**.
+The order of precedence for generating a random 7^th^ chord would be:
+
+- get random clef
+- get random inversion
+- get the root of the chord based on the range of the clef and the inversion
+- get random chord quality (doesn't matter when we get this)
+
+In order to get the root of the chord, the clef and the inversion must be known first, otherwise the chord might render off the page.
+
+F>[![Clef Range Issue](/img/clef_range_problem.svg)](/files/clef_range_problem.html)
+Figure: Clef Range Issue
+
+So the actual range of the clef needs to be reduced by the distance from the bottom note.
+
+F>[![Clef Range Issue](/img/clef_range.svg)](/files/clef_range.html)
+Figure: Actual Clef Range
+
+```elm
+Random.generate
+    NewNote
+        <| Random.Array.sample
+        <| Array.fromList
+        <| possibleNotes model.clef inversion
+```
+
+# Conclusion
+
+Writing a music app in Elm has been delightful. Coming from JavaScript, Python, and other C-like languages the syntax may seem strange. After a few hours, this strangeness wears off. The type system also can make for some very readable code. It is nice to see that new languages, like Rust, are supporting [types and pattern matching](https://doc.rust-lang.org/book/match.html).
+
