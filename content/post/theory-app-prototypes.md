@@ -17,7 +17,7 @@ My requirements were:
 
 My first experiment was to use the SVG module in Elm. I ripped out the SVG output from GNU LilyPond and converted it over to Elm. That experiment went well. I kept iterating and making more and more complicated exercises. The following is the result of many months of prototyping. The next step is to put all of these exercises into an <abbr title="Single Page Application">SPA</abbr>.
 
-*Disclaimer: I know there are some quirks with these examples. Sometimes a note will shoot off the page. These issues are fixed in my <abbr title="Single Page Application">SPA</abbr>.*
+*Disclaimer: I know there are some quirks with these examples. :confounded: Sometimes a note will shoot off the page. These issues are fixed in my <abbr title="Single Page Application">SPA</abbr>.*
 
 ## Note Flash Cards
 
