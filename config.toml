@@ -23,6 +23,6 @@ pygmentscodefences = true
 	name = "Projects"
 	url  = "https://github.com/pianomanfrazier"
 [[menu.main]]
-    name = "RSS"
-    url  = "/index.xml"
+    name = "Tags"
+    url  = "/tags"
 

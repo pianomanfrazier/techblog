@@ -3,6 +3,7 @@ title: "First Steps With Elm"
 date: 2017-12-01T14:16:23-07:00
 draft: false
 markup: "mmark"
+tags: "elm"
 ---
 
 For my computer languages class I decided to evaluate Elm. Having not spend as much time on functional languages as I would have liked I figured this would be a good oportunity to expand my functional programming brain. These simple examples are the result of doing the exercises found in the [Elm Documentation](https://guide.elm-lang.org/).

@@ -3,6 +3,7 @@ title = "Thoughts on Productivity"
 date = 2018-07-25T07:14:05-06:00
 draft = false
 markup = "mmark"
+tags = ["productivity"]
 +++
 
 Here are some of my thoughts on being more productive. Most of these ideas don't just apply to programming or office work. They worked for me as a musician as well.

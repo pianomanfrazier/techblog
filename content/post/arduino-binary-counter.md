@@ -3,6 +3,7 @@ title: "Arduino Binary Counter"
 date: 2018-01-25T09:33:40-07:00
 draft: false
 markup: mmark
+tags: ["arduino"]
 ---
 
 I am volunteering for a little science group once a week for my daughter's 1^st^ grade class. I thought it would be fun to learn to count binary so I programed an LED binary counter using an arduino. I am using an Arduino Mini Pro 3.3V.

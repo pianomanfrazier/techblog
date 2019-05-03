@@ -3,6 +3,7 @@ title = "First Vue App in Production"
 date = 2018-09-24T17:08:05-06:00
 draft = false
 markup = "mmark"
+tags = ["vuejs"]
 +++
 
 At work I have been tasked with rewriting portions of our current Ext JS application in Vue.js to work better with mobile devices. This post is some thoughts about my experience building a larger application in Vue. The Vue mobile client has around 12 different pages.

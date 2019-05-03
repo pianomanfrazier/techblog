@@ -3,6 +3,7 @@ title = "Music Theory in Elm"
 date = 2019-04-13T16:35:55-06:00
 draft = false
 markup = "mmark"
+tags = ["elm", "music"]
 +++
 
 Lately I have been working on a music theory learning app. The app combines short video tutorials with music theory exercises, think Khan Academy combined with Duo Lingo.

@@ -4,6 +4,7 @@ date= 2018-03-15T12:04:46-06:00
 draft= false
 markup= "mmark"
 hasMath= true
+tags= "python"
 +++
 
 Throughout my Computer Science degree I have been doing a lot my homework in Latex. It has a steep learning curve but the results are amazing.

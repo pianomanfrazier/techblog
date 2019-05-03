@@ -3,6 +3,7 @@ title= "Comparing Hugo and Gatsby Static Site Generators"
 date= 2018-03-13T16:25:00-06:00
 draft=false
 markup= "mmark"
+tags = ["ssg"]
 +++
 
 ## What is a static site generator?
