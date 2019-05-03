@@ -1,3 +1,6 @@
 [submodule "themes/black-and-light"]
 	path = themes/black-and-light
 	url = https://github.com/pianomanfrazier/hugo-black-and-light-theme.git
+[submodule "themes/terminal"]
+	path = themes/terminal
+	url = https://github.com/panr/hugo-theme-terminal.git
