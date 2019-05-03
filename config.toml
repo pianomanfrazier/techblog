@@ -15,13 +15,12 @@ pygmentscodefences = true
 	sitename = "Ryan Frazier's Blog"
 	description = "Ramblings of Ryan Frazier: Programmer, Musician, and Educator"
 	dateform = "January 2, 2006"
+  github = "pianomanfrazier"
+  rss = true
 
 [[menu.main]]
 	name = "About"
 	url  = "/about"
-[[menu.main]]
-	name = "Projects"
-	url  = "https://github.com/pianomanfrazier"
 [[menu.main]]
     name = "Tags"
     url  = "/tags"
