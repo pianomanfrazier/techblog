@@ -11,6 +11,10 @@ theme = "black-and-light"
 pygmentsstyle = "manni"
 pygmentscodefences = true
 
+[outputs]
+  home = ["HTML", "RSS"]
+  page = ["HTML"]
+
 [params]
 	sitename = "Ryan Frazier's Blog"
 	description = "Ramblings of Ryan Frazier: Programmer, Musician, and Educator"
