@@ -2,4 +2,6 @@
 
 The site is generated with Hugo.
 
-Since recent versions of Hugo have broken my theme. I am sticking with Hugo v0.46 for now. Just grab that version of the binary and use that if you want to build the site.
+## Theme
+
+The Theme is my own fork of [Black and Light](https://github.com/pianomanfrazier/hugo-black-and-light-theme). I program the theme as I blog so there are quite a few changes to the theme.
