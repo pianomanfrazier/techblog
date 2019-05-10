@@ -153,7 +153,7 @@ Random.generate
         <| possibleNotes model.clef inversion
 ```
 
-# Conclusion
+## Conclusion
 
 Writing a music app in Elm has been delightful. Coming from JavaScript, Python, and other C-like languages the syntax may seem strange. After a few hours, this strangeness wears off. The type system also can make for some very readable code. It is nice to see that new languages, like Rust, are supporting [types and pattern matching](https://doc.rust-lang.org/book/match.html).
 
