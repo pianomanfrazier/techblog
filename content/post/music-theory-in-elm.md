@@ -125,13 +125,25 @@ The order of precedence for generating a random 7^th^ chord would be:
 
 In order to get the root of the chord, the clef and the inversion must be known first, otherwise the chord might render off the page.
 
-F>[![Clef Range Issue](/img/clef_range_problem.svg)](/files/clef_range_problem.html)
-Figure: Clef Range Issue
+{{< figure
+  src="/img/clef_range_problem.svg"
+  alt="Clef Range Issue"
+  title="Clef Range Issue"
+  caption="Clef Range Issue"
+  link="/files/clef_range_problem.html"
+  style="max-width: 300px !important;"
+>}}
 
 So the actual range of the clef needs to be reduced by the distance from the bottom note.
 
-F>[![Clef Range Issue](/img/clef_range.svg)](/files/clef_range.html)
-Figure: Actual Clef Range
+{{< figure
+  src="/img/clef_range.svg"
+  alt="Actual Clef Range"
+  title="Actual Clef Range"
+  caption="Actual Clef Range"
+  link="/files/clef_range.html"
+  style="max-width: 250px !important;"
+>}}
 
 ```elm
 Random.generate

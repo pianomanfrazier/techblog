@@ -17,26 +17,29 @@ For my probability class this semester I have also wanted to produce graphs and 
 
 Here are some highlights of the graphs I did for my homework. The visualizations helped me see what was going on with the math.
 
-F>![Poisson distribution](/img/math_homework/poisson.svg)
-Figure: Poisson Distribution where $$ \lambda = 10 $$ 
-<br>[[download poisson.py]](/files/plots/poisson.py)
+{{< figure
+  src="/img/math_homework/poisson.svg"
+  alt="Poisson distribution"
+  title="Poisson distribution"
+  caption="Poisson Distribution where $$ \lambda = 10 $$ [[download poisson.py]](/files/plots/poisson.py)"
+>}}
 
-F>![Lognormal Distribution](/img/math_homework/lognorm.svg)
-Figure: Lognormal Distribution $$ f(x) = \frac{1}{\sigma x \sqrt{2 \pi}} e^{- (\ln x - \mu)^2 / 2 \sigma^2 }$$ 
-<br>[[download lognorm.py]](/files/plots/lognorm.py)
+{{< figure
+  src="/img/math_homework/lognorm.svg"
+  alt="Lognormal Distribution"
+  title="Lognormal Distribution"
+  caption="Lognormal Distribution $$ f(x) = \frac{1}{\sigma x \sqrt{2 \pi}} e^{- (\ln x - \mu)^2 / 2 \sigma^2 }$$ [[download lognorm.py]](/files/plots/lognorm.py)"
+>}}
+
 
 Using [moviepy](https://zulko.github.io/moviepy/) we can create a nice video of this graph where $$\sigma$$ varies over time.
 [[download lognorm_video.py]](/files/plots/lognorm_video.py)
 
 {{< video src="/video/lognormal.mp4" type="mp4" loop="true" autoplay="true">}}
 
-F>![Normal Distribution of Velocity of a Particle](/img/math_homework/velocity.svg)
-Figure: Normal Distribution of the Velocity of a Particle $$ f(x) = 2 \frac{mv}{\sigma \sqrt{2 \pi}} e^{- ( \frac{1}{2} mv^2 - \mu)^2 / 2 \sigma ^2} $$
-<br>[[download velocity.py]](/files/plots/velocity.py)
+{{< figure src="/img/math_homework/velocity.svg" alt="Normal Distribution" title="Normal Distribution" caption="Normal Distribution of the Velocity of a Particle $$ f(x) = 2 \frac{mv}{\sigma \sqrt{2 \pi}} e^{- ( \frac{1}{2} mv^2 - \mu)^2 / 2 \sigma ^2} $$ [[download velocity.py]](/files/plots/velocity.py)" >}}
 
-F>![CDF](/img/math_homework/bivariate.svg)
-Figure: Plot of a Bivariate Distribution $$f_{XY}(x,y) = x e^{-x(y+1)}$$.
-<br>[[download bivariate.py]](/files/plots/bivariate.py)
+{{< figure src="/img/math_homework/bivariate.svg" alt="Bivariate" title="Bivariate" caption="Plot of a Bivariate Distribution $$f_{XY}(x,y) = x e^{-x(y+1)}$$ [[download bivariate.py]](/files/plots/bivariate.py)" >}}
 
 And just for fun let's plot a torus and make a video out of it. [[download torus.py]](/files/plots/torus.py)
 

@@ -52,9 +52,9 @@ The template `posts.html` with the filter would look like:
 ```jinja
 <html>
 <body>
-<div class="content"
-{{ md_text | markdown | safe }}
-</div>
+  <div class="content"
+    {{ md_text | markdown | safe }}
+  </div>
 </body>
 </html>
 ```

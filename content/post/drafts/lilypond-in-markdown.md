@@ -15,7 +15,7 @@ The Hugo developers have chosen not to allow an exec shortcode. This would allow
 I have long wanted to write [LilyPond](http://lilypond) in a markdown file and have it render as a music image. In Hugo this would look something like
 
 ```txt
-# Some LilyPond Markdown
+## Some LilyPond Markdown
 
 {{</* lilypond */>}}
 \score{
@@ -94,7 +94,7 @@ I skipped a couple of things to make the example more readable.
 
 See [the code](https://github.com/pianomanfrazier/lilypond-in-markdown/blob/c2ba87e26bc867ffc3163e3532038518f11e7e31/.eleventy.js#L130) for the full example.
 
-# Highlight LilyPond Code
+## Highlight LilyPond Code
 
 There are no good LilyPond syntax highlighters for the web. With Highlight.js ,Prism.js, or Hugo you could use `tex` but the results aren't great. I made an attempt at defining my own Prism.js syntax but ended up with a huge nasty regex.
 
@@ -116,11 +116,9 @@ Here is some lilypond using the `latex` highlight in Hugo (Chroma):
 
 The only thing that gets highlighted are things preceded by a slash `\`.
 
-F>![Prism Highlight](/img/lilypond_in_markdown/prism_highlight.png)
-Figure: Prism Highlight with Regex 
+{{< figure src="/img/lilypond_in_markdown/prism_highlight.png" alt="Prism Highlight" title="Prism Highlight" caption="Prism Highlight with Regex" >}}
 
-F>![python-ly Highlight](/img/lilypond_in_markdown/python-ly_highlight.png)
-Figure: python-ly Hightlight
+{{< figure src="/img/lilypond_in_markdown/python-ly_highlight.png" alt="python-ly Highlight" title="python-ly Highlight" caption="python-ly Highlight" >}}
 
 Since Prism is using regex it is hard to separate different contexts between strings or note names like in `hills a -- dorn`.
 

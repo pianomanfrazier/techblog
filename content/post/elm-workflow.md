@@ -5,8 +5,7 @@ draft = false
 markup = "mmark"
 +++
 
-{{< progress title="elm" width1="50%" width2="20%">}}
-{{< progress title="js" width1="30%" width2="70%">}}
+![Dev Time](/img/elm-workflow/dev-time.png)
 
 ## Dev Time vs. Debug Time
 
@@ -73,8 +72,7 @@ This is also a great way to solve a lot of other problems as well. See [Kris Jen
 
 ## TypeError Undefined
 
-F>![JS undefined error](/img/js-undefined.png)
-Figure: JS undefined error
+{{< figure src="/img/elm-workflow/js-undefined.png" alt="JS undefined error" title="JS undefined error" caption="JS undefined error" >}}
 
 Several months ago, I was doing a project with Vue using Vuetify. I noticed that Vuetify had updated their library with a new component I wanted to use so I updated Veutify. This completely broke my application.
 
@@ -84,11 +82,9 @@ There were null and undefined errors throughout the application. It took about a
 
 If you do need to debug you have two options in Elm. You can use `Debug.log` or the time traveling debugger. For larger Elm applications I use [Create Elm App](https://github.com/halfzebra/create-elm-app) which includes the time traveling debugger. If I get unexpected behavior I usually start by inspecting the model and then the messages that generated the model from the debugger.
 
-F>![Elm Time Debugger](/img/time-debugger.png)
-Figure: Elm Time Traveling Debugger
+{{< figure src="/img/elm-workflow/time-debugger.png" alt="Elm Time Debugger" title="Elm Time Debugger" caption="Elm Time Traveling Debugger" >}}
 
-F>![Render note model](/img/render-note-model.png)
-Figure: Render Note Model 
+{{< figure src="/img/elm-workflow/render-note-model.png" alt="Render Note Model" title="Render Note Model" caption="Render Note Model" >}}
 
 Elm 0.19 does not come with the debugger when you run `elm reactor` like you could in Elm 0.18. You can use `Debug.log` or `Debug.toString model` in the view function. To inspect a particular event I would place a `Debug.log` in my update function.
 
