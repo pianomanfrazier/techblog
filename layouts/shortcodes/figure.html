@@ -1,6 +1,16 @@
-<figure style="padding: 42px 0;">
-  {{ if .Get "link" }}<a href="{{ .Get "link" }}" target="_blank">{{ end }}
-  <img width={{ if .Get "width" }}{{ .Get "width" }}{{ else }}100%{{ end }} {{ if .Get "style" }} style="{{ .Get "style" | safeCSS }}" {{ end }} src="{{ .Get "src" }}" alt="{{ .Get "alt" }}" title="{{ .Get "title" | plainify }}">
+<figure>
+  {{ if .Get "link" }}
+    <a href="{{ .Get "link" }}" target="_blank">
+  {{ end }}
+  <img
+    {{ if .Get "width" }}width="{{ .Get "width" }}"{{ end }}
+    {{ if .Get "style" }} style="{{ .Get "style" | safeCSS }}" {{ end }}
+    src="{{ .Get "src" }}"
+    alt="{{ .Get "alt" }}"
+    title="{{ .Get "title" | plainify }}"
+  >
   {{ if .Get "link" }}</a>{{ end }}
-  {{ if .Get "caption" }}<figcaption class="">{{ .Get "caption" | markdownify }}</figcaption>{{ end }}
+  {{ if .Get "caption" }}
+    <figcaption class="">{{ .Get "caption" | markdownify }}</figcaption>
+  {{ end }}
 </figure>
