@@ -104,6 +104,8 @@ After poking around and discovering some undocumented ways of using the python-l
 
 Compare the difference between the two outputs (screen shots taken from [lilypond in markdown](https://lilypond-in-markdown.netlify.com) and [python-ly highlight test](https://lilypond-in-markdown.netlify.com/lilycode)):
 
+### Hugo using Chroma
+
 Here is some lilypond using the `latex` highlight in Hugo (Chroma):
 ```latex
 \score{
@@ -116,11 +118,17 @@ Here is some lilypond using the `latex` highlight in Hugo (Chroma):
 
 The only thing that gets highlighted are things preceded by a slash `\`.
 
+### PrismJS
+
 {{< figure src="/img/lilypond_in_markdown/prism_highlight.png" alt="Prism Highlight" title="Prism Highlight" caption="Prism Highlight with Regex" >}}
+
+### Python-Ly
 
 {{< figure src="/img/lilypond_in_markdown/python-ly_highlight.png" alt="python-ly Highlight" title="python-ly Highlight" caption="python-ly Highlight" >}}
 
 Since Prism is using regex it is hard to separate different contexts between strings or note names like in `hills a -- dorn`.
+
+## Custom Nunjucks Highlight Tag
 
 I added another Nunjucks custom tag using the same method as before. This time I pass `body()` to `python-ly`.
 
@@ -131,7 +139,10 @@ eleventyConfig.addNunjucksTag("lilycode", function(nunjucksEngine) {
     // define and parse tags
   }
   this.run = function(context, body, callback) {
-    let execString = `echo "${body()}" | ly highlight -d full_html=false -d wrapper_tag=code -d document_id=language-lilypond`;
+    let execString = `
+      echo "${body()}" |
+      ly highlight -d full_html=false -d wrapper_tag=code -d document_id=language-lilypond
+      `;
     exec(execString, function(err, stdout, stderr) {
       // wrap the code block with a pre as per convention
       let formatedHtml = `<pre class="language-lilypond">${stdout}</pre>`;
@@ -142,7 +153,7 @@ eleventyConfig.addNunjucksTag("lilycode", function(nunjucksEngine) {
 ```
 See [the actual code](https://github.com/pianomanfrazier/lilypond-in-markdown/blob/master/.eleventy.js#L80).
 
-You can then style the output however you like. Here I am using a monokai inspired theme based on the Prism Okaidia theme. See my [the css](https://github.com/pianomanfrazier/lilypond-in-markdown/blob/master/css/lilypond.css).
+You can then style the output however you like. Here I am using a monokai inspired theme based on the Prism Okaidia theme. See [my css](https://github.com/pianomanfrazier/lilypond-in-markdown/blob/master/css/lilypond.css).
 
 To use the custom tag it looks like
 
