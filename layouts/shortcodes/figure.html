@@ -2,13 +2,22 @@
   {{ if .Get "link" }}
     <a href="{{ .Get "link" }}" target="_blank">
   {{ end }}
-  <img
-    {{ if .Get "width" }}width="{{ .Get "width" }}"{{ end }}
-    {{ if .Get "style" }} style="{{ .Get "style" | safeCSS }}" {{ end }}
-    src="{{ .Get "src" }}"
-    alt="{{ .Get "alt" }}"
-    title="{{ .Get "title" | plainify }}"
-  >
+  {{ if .Get "inlineSVG" }}
+    {{ $file := .Get "src" }}
+    <div
+      style="margin: auto;{{ if .Get "style" }}{{ .Get "style" | safeCSS }}{{ end }}"
+    >
+    {{ readFile $file | safeHTML }}
+    </div>
+  {{ else }}
+    <img
+      {{ if .Get "width" }}width="{{ .Get "width" }}"{{ end }}
+      {{ if .Get "style" }} style="{{ .Get "style" | safeCSS }}" {{ end }}
+      src="{{ .Get "src" }}"
+      alt="{{ .Get "alt" }}"
+      title="{{ .Get "title" | plainify }}"
+    >
+  {{ end }}
   {{ if .Get "link" }}</a>{{ end }}
   {{ if .Get "caption" }}
     <figcaption class="">{{ .Get "caption" | markdownify }}</figcaption>

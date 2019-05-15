@@ -1,0 +1,27 @@
+<pre>
+<code class="language_lilypond"><span style="font-weight: bold;">\version</span> <span style="color: #c00000;">"2.18.2"
+
+</span>upper = <span style="color: #0000c0; font-weight: bold;">\relative</span> c'' <span style="font-weight: bold;">{
+  </span><span style="color: #0000c0; font-weight: bold;">\clef</span> <span style="color: #0000ff;">treble
+  </span><span style="color: #0000c0; font-weight: bold;">\key</span> c <span style="color: #0000c0; font-weight: bold;">\major
+  \time</span> <span style="color: #808000;">4/4
+
+  </span>a<span style="color: #008080;">4</span> b c d
+<span style="font-weight: bold;">}
+
+</span>lower = <span style="color: #0000c0; font-weight: bold;">\relative</span> c <span style="font-weight: bold;">{
+  </span><span style="color: #0000c0; font-weight: bold;">\clef</span> <span style="color: #0000ff;">bass
+  </span><span style="color: #0000c0; font-weight: bold;">\key</span> c <span style="color: #0000c0; font-weight: bold;">\major
+  \time</span> <span style="color: #808000;">4/4
+
+  </span>a<span style="color: #008080;">2</span> c
+<span style="font-weight: bold;">}
+
+</span><span style="font-weight: bold;">\score</span> <span style="font-weight: bold;">{
+  </span><span style="color: #0000c0; font-weight: bold;">\new</span> <span style="font-weight: bold;">PianoStaff</span> <span style="font-weight: bold;">&lt;&lt;
+    </span><span style="color: #0000c0; font-weight: bold;">\new</span> <span style="font-weight: bold;">Staff</span> = <span style="color: #c00000;">"upper"</span> <span style="color: #0000ff;">\upper
+    </span><span style="color: #0000c0; font-weight: bold;">\new</span> <span style="font-weight: bold;">Staff</span> = <span style="color: #c00000;">"lower"</span> <span style="color: #0000ff;">\lower
+  </span><span style="font-weight: bold;">&gt;&gt;
+  </span><span style="font-weight: bold;">\layout</span> <span style="font-weight: bold;">{ }
+}
+</span></code></pre>

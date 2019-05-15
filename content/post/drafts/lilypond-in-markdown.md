@@ -1,18 +1,38 @@
 +++
-title = "Render Lilypond in Markdown"
-date = 2019-05-15
+title = "Render LilyPond in Markdown"
+date = 2019-05-17
 draft = true
 markup = "mmark"
 +++
 
-- Demo: https://lilypond-in-markdown.netlify.com
-- Repository: https://github.com/pianomanfrazier/lilypond-in-markdown
+- **Demo:** https://lilypond-in-markdown.netlify.com
+- **LilyPond Syntax Highlight Demo:** https://lilypond-in-markdown.netlify.com/lilycode
+- **Repository:** https://github.com/pianomanfrazier/lilypond-in-markdown
 
-## Hugo's Shortcomings 
+I want to write [LilyPond](http://lilypond) code, a music typesetting markup language, directly in a markdown file and have it rendered directly to embeded SVG in an HTML page. This post explores the process I went through to get this working.
 
-The Hugo developers have chosen not to allow an exec shortcode. This would allow theme developers to execute arbitrary code on users machines and therefore seen as a security risk. This would be useful for developers because there are times when you could process some piece of data and return some html.
+My typical workflow when writing about music on the web is to make a music image and then reference it in the markdown as an image. When doing lots of examples this gets tedious and my source files for the images are not contained within my content.
 
-I have long wanted to write [LilyPond](http://lilypond) in a markdown file and have it render as a music image. In Hugo this would look something like
+## What is LilyPond?
+
+LilyPond is a markup language similar to LaTeX but for making music scores. LilyPond takes an input text file like the following
+
+{{< readfile file="/data/lilypond-highlight/piano-score.html" >}}
+
+and it would render to this
+
+{{< figure
+  src="/static/img/lilypond_in_markdown/piano_score.min.svg"
+  alt="Example LilyPond Output"
+  title="Example LilyPond Output"
+  caption="Example LilyPond Output"
+  style="max-width: 300px !important;"
+  inlineSVG="true"
+>}}
+
+## Proposed API
+
+If I were using Hugo, my markdown file would contain something like this
 
 ```txt
 ## Some LilyPond Markdown
@@ -28,13 +48,17 @@ I have long wanted to write [LilyPond](http://lilypond) in a markdown file and h
 {{</* \lilypond */>}}
 ```
 
+## Hugo's Shortcomings 
+
+The Hugo developers have chosen [not to allow an exec shortcode](https://github.com/gohugoio/hugo/issues/796). This would allow theme developers to execute arbitrary code on users machines and therefore seen as a security risk.
+
 ## Custom Nunjucks Tag
 
 Since I can't do it in Hugo I looked for another <abbr title="Static Site Generator">SSG</abbr> that had a more flexible (and dangerous) template system. I love the jinja2 api so I tried the JS port Nunjucks. Nunjucks allows you to define [custom tags](https://mozilla.github.io/nunjucks/api.html#custom-tags). 
 
 I had a working prototype of Nunjucks just rendering some lilypond from a custom tag. Now I needed an <abbr title="Static Site Generator">SSG</abbr> that would allow access to the Nunjucks API. So I went to [StaticGen.com](https://www.staticgen.com/) and filtered by template type.
 
-I tried out [11ty](https://www.11ty.io/) and it worked out great. 11ty is a very flexible static website builder framework.
+I tried out [11ty](https://www.11ty.io/) and it worked out great.
 
 The resulting call in my markdown looks like this
 ```jinja
@@ -96,13 +120,15 @@ See [the code](https://github.com/pianomanfrazier/lilypond-in-markdown/blob/c2ba
 
 ## Highlight LilyPond Code
 
-There are no good LilyPond syntax highlighters for the web. With Highlight.js ,Prism.js, or Hugo you could use `tex` but the results aren't great. I made an attempt at defining my own Prism.js syntax but ended up with a huge nasty regex.
+There are no good LilyPond syntax highlighters for the web. With Highlight.js, Prism.js, or Hugo you could use `tex` or `latex` highlighting but the results aren't great. I made an attempt at defining my own Prism.js syntax but ended up with a huge nasty regex.
 
-A much better solution is to use an actual parser/lexer. Fortunately [python-ly](https://github.com/frescobaldi/python-ly) exposes an API to highlight lilypond code through the command line. This is what the Frescobaldi LilyPond editor uses to highlight.
+A much better solution is to use an actual parser/lexer. Fortunately [python-ly](https://github.com/frescobaldi/python-ly) exposes an API to highlight lilypond code through the command line.
 
-After poking around and discovering some undocumented ways of using the python-ly CLI I had something that provided some great syntax highlighting.
+Python-ly is a command line tool used to process LilyPond files. You can transpose, reformat, and output syntax highlighted html from an input file. This is what the [Frescobaldi LilyPond editor](http://frescobaldi.org/index.html)  uses to highlight and manipulate LilyPond files.
 
-Compare the difference between the two outputs (screen shots taken from [lilypond in markdown](https://lilypond-in-markdown.netlify.com) and [python-ly highlight test](https://lilypond-in-markdown.netlify.com/lilycode)):
+After poking around and discovering some undocumented ways of using the python-ly CLI, I had something that provided some great syntax highlighting.
+
+Compare the difference between the outputs of Hugo, PrismJS, and python-ly (screen shots taken from [lilypond in markdown](https://lilypond-in-markdown.netlify.com) and [python-ly highlight test](https://lilypond-in-markdown.netlify.com/lilycode)):
 
 ### Hugo using Chroma
 
@@ -120,13 +146,22 @@ The only thing that gets highlighted are things preceded by a slash `\`.
 
 ### PrismJS
 
+And here is PrismJS with my own LilyPond definition.
+
+Since Prism is using regex, it is hard to separate different contexts between strings or note names like in `hills a -- dorn`.
+
 {{< figure src="/img/lilypond_in_markdown/prism_highlight.png" alt="Prism Highlight" title="Prism Highlight" caption="Prism Highlight with Regex" >}}
 
 ### Python-Ly
 
-{{< figure src="/img/lilypond_in_markdown/python-ly_highlight.png" alt="python-ly Highlight" title="python-ly Highlight" caption="python-ly Highlight" >}}
+And finally python-ly. I am using my own custom CSS to style the output. Each parsed token is wrapped in a span with a class name.
 
-Since Prism is using regex it is hard to separate different contexts between strings or note names like in `hills a -- dorn`.
+{{<
+  figure src="/img/lilypond_in_markdown/python-ly_highlight.png"
+  alt="python-ly Highlight"
+  title="python-ly Highlight"
+  caption="python-ly Highlight with custom CSS"
+>}}
 
 ## Custom Nunjucks Highlight Tag
 
@@ -168,3 +203,7 @@ To use the custom tag it looks like
 }
 {% endlilycode %}
 ```
+
+## Conlusion
+
+What I have learned from this process is that Hugo is great for blogging for most use cases. If you need a more powerful template system to process your markdown files try 11ty. I found 11ty easy to use with good documentation.

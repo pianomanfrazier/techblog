@@ -132,6 +132,7 @@ In order to get the root of the chord, the clef and the inversion must be known 
   caption="Clef Range Issue"
   link="/files/clef_range_problem.html"
   style="max-width: 300px !important;"
+  width="100%"
 >}}
 
 So the actual range of the clef needs to be reduced by the distance from the bottom note.
@@ -143,6 +144,7 @@ So the actual range of the clef needs to be reduced by the distance from the bot
   caption="Actual Clef Range"
   link="/files/clef_range.html"
   style="max-width: 250px !important;"
+  width="100%"
 >}}
 
 ```elm
