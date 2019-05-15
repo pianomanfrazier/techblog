@@ -1,7 +1,7 @@
 +++
 title = "Render LilyPond in Markdown"
 date = 2019-05-17
-draft = true
+draft = false
 markup = "mmark"
 +++
 
