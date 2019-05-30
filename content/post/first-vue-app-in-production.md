@@ -3,7 +3,7 @@ title = "First Vue App in Production"
 date = 2018-09-24T17:08:05-06:00
 draft = false
 markup = "mmark"
-tags = ["vuejs"]
+tags = ["vuejs", "javascript"]
 +++
 
 At work I have been tasked with rewriting portions of our current Ext JS application in Vue.js to work better with mobile devices. This post is some thoughts about my experience building a larger application in Vue. The Vue mobile client has around 12 different pages.
@@ -48,3 +48,4 @@ One thing I was not expecting was keeping design consistency across the applicat
 ## Conclusion
 
 The development experience shipping a Vue app was nice. Having worked on ExtJS in the previous version of the application, Vue was refreshing. I had a lot of control over how things worked and looked. Vuetify provided a lot of functionality and got things going fast. When I needed a custom component, I had the freedom to do so. Doing custom things with ExtJS can be very painful.
+

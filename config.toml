@@ -18,6 +18,7 @@ pygmentscodefences = true
 	description = "Ramblings of Ryan Frazier: Programmer, Musician, and Educator"
 	dateform = "January 2, 2006"
   github = "pianomanfrazier"
+  linkedin = "pianomanfrazier"
   rss = true
 
 [[menu.main]]

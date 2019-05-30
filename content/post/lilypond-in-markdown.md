@@ -3,6 +3,7 @@ title = "Render LilyPond in Markdown"
 date = 2019-05-15
 draft = false
 markup = "mmark"
+tags = ["javascript"]
 +++
 
 - **Demo:** https://lilypond-in-markdown.netlify.com

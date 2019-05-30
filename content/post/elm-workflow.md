@@ -3,6 +3,7 @@ title = "Elm Workflow"
 date = 2019-05-08T05:00:00-00:00
 draft = false
 markup = "mmark"
+tags = ["elm"]
 +++
 
 ![Dev Time](/img/elm-workflow/dev-time.png)
