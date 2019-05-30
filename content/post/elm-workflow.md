@@ -89,7 +89,7 @@ If you do need to debug you have two options in Elm. You can use `Debug.log` or 
 
 Elm 0.19 does not come with the debugger when you run `elm reactor` like you could in Elm 0.18. You can use `Debug.log` or `Debug.toString model` in the view function. To inspect a particular event I would place a `Debug.log` in my update function.
 
-```elm
+{{< highlight elm "hl_lines=5 11" >}}
 view : Model -> Html Msg
 view model =
     div
@@ -102,7 +102,7 @@ update msg model =
         BtnClick ->
             Debug.log "Button Clicked" <|
             ( { model | btnClicked = true }, Cmd.none)
-```
+{{< / highlight >}}
 
 ## Elm Reactor
 
