@@ -1,7 +1,7 @@
 +++
 title = "Python Script a Java Web Application"
-date = 2019-05-29T23:08:21-06:00
-draft = true
+date = 2019-06-04
+draft = false
 tags = ["python","productivity"]
 markup = "mmark"
 +++
