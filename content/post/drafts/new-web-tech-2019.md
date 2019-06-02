@@ -5,12 +5,7 @@ draft = true
 markup = "mmark"
 +++
 
-Writing a blog is a great excuse to explore some new and unfamiliar technology. This is a todo list to myself of libraries and things I would like to explore.
-
-- [Stencil](https://stenciljs.com/)
-- [Svelte](https://svelte.dev/)
-- [Pollen](https://docs.racket-lang.org/pollen/)
-- [Sergey](https://sergey.cool/)
+Writing a blog is a great excuse to explore some new and unfamiliar technology. In this post I will explore two new JavaScript frameworks, [Stencil](https://stenciljs.com/) and [Svelte](https://svelte.dev/).
 
 ## Stencil
 
@@ -125,7 +120,67 @@ Works with
 
 See also [Sapper](https://sapper.svelte.dev/). Similar to the Vue CLI to generate larger Single Page Applications with routing, server-side rendering, and code splitting.
 
-## Pollen
+## Compare With [Real World App](https://github.com/gothinkster/realworld)
 
-## Sergey
+{{< figure
+  src="/img/new-web-tech-2019/compare.svg"
+  alt=    "Comparison Bar Chart"
+  title=  "Comparison Bar Chart"
+  caption="RealWorld App JS Asset Size"
+>}}
+
+| Framework | Number of JS Files | JS size (KB) | % |
+|-----------|---:|----------:|----:|
+| Svelte    | 7  | 43.54    | 4 |
+| Stencil   | 10 | 120.06    | 12 |
+| **Other Frameworks** |    |    |     |
+| Angular   | 8  | 551.97    | 54  |
+| React/Redux | 1  | 1,024.00 | 100 |
+| Vue       | 6  | 218.13    | 21  |
+| Elm       | 1  |  90.52    | 9  |
+
+
+{{< figure
+  src="/img/new-web-tech-2019/svelte-network-performance.png"
+  alt="Svelte Asset Size"
+  title="Svelte Asset Size"
+  caption="Svelte Asset Size"
+>}}
+
+{{< figure
+  src="/img/new-web-tech-2019/stencil-network-performance.png"
+  alt="Stencil Asset Size"
+  title="Stencil Asset Size"
+  caption="Stencil Asset Size"
+>}}
+
+## Compare With Angular, React, and Elm
+
+{{< figure
+  src="/img/new-web-tech-2019/angular-network-performance.png"
+  alt="Angular Asset Size"
+  title="Angular Asset Size"
+  caption="Angular Asset Size"
+>}}
+
+{{< figure
+  src="/img/new-web-tech-2019/react-network-performance.png"
+  alt="React Asset Size"
+  title="React Asset Size"
+  caption="React Asset Size"
+>}}
+
+{{< figure
+  src="/img/new-web-tech-2019/vue-network-performance.png"
+  alt="Vue Asset Size"
+  title="Vue Asset Size"
+  caption="Vue Asset Size"
+>}}
+
+{{< figure
+  src="/img/new-web-tech-2019/elm-network-performance.png"
+  alt="Elm Asset Size"
+  title="Elm Asset Size"
+  caption="Elm Asset Size"
+>}}
 
