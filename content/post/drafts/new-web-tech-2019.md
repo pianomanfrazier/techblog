@@ -5,17 +5,19 @@ draft = true
 markup = "mmark"
 +++
 
-Writing a blog is a great excuse to explore some new and unfamiliar technology. In this post I will explore two new JavaScript frameworks, [Stencil](https://stenciljs.com/) and [Svelte](https://svelte.dev/).
+Writing a blog is a great excuse to explore some new and unfamiliar technology. In this post I will explore two new(er) JavaScript frameworks, [Stencil](https://stenciljs.com/) and [Svelte](https://svelte.dev/).
+
+As of writing this post. Svelte is at version 3.4.4 and Stencil is at version 1.0.0. Both projects seem actively worked on based on GitHub activity.
+
+Both frameworks are web compiler frameworks. Meaning, they take some source input and generate some minified optimized version in JavaScript, HTML, and CSS.
 
 ## Stencil
 
-A web component compiler. The framework generates standard Web Components.
+Stencil was created and is maintained by the Ionic Framework team. The focus is on using web standards, like custom web components, or future web standards and not the opinions of a particular framework or build tools.
 
-- TypeScript
-- JSX
-- virtual DOM
+Since it generates standard web components the components can be used in any JavaScript framework. It leverages modern browser APIs like [Custom Elements](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements). It supports IE11 and up.
 
-Created by the Ionic Framework team. Compiler tool instead of a runtime tool. Focus on web standards instead of the opinions of a particular framework or build tools. Leverage modern browser APIs like [Custom Elements](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements). Supports IE11 and up.
+Stencil also provides support for TypeScript and JSX. Here is an example component.
 
 [Example component](https://stenciljs.com/docs/my-first-component). TypeScript + JSX = TSX
 
@@ -53,9 +55,11 @@ Usage
 - No virtual DOM
 - No runtime (all work done at compile time)
 
-Example component. Very similar to Vue single file components. A `.svelte` file can have 3 sections a script tag with the business logic, a style tag with CSS, and finally markup.
+`.svelte` files are very similar to Vue single file components. A `.svelte` file can have 3 sections a script tag with the business logic, a style tag with CSS, and finally markup.
 
 The markup differs from a Vue component because you don't need a root level element.
+
+Here is an example component. I went through the tutorial in their documentation and combined all the parts I found useful or interesting.
 
 ```html
 <script>
@@ -112,13 +116,13 @@ Nested.svelte
 <p>{title}</p>
 ```
 
-Works with
+Svelte works with the following build tools.
 
 - Rollup
 - Webpack
 - Parcel
 
-See also [Sapper](https://sapper.svelte.dev/). Similar to the Vue CLI to generate larger Single Page Applications with routing, server-side rendering, and code splitting.
+For generating larger projects, similar to the Vue CLI, see [Sapper](https://sapper.svelte.dev/). It supports routing, server-side rendering, and code-splitting.
 
 ## Compare With [Real World App](https://github.com/gothinkster/realworld)
 
