@@ -10,9 +10,7 @@ In this post I am going to describe my process for providing a simple way to run
 
 These tasks might be to generate a report for the client or do some complicated data migration. The script could also allow you to inspect some data and then create a response to send back to the server.
 
-This approach also has the added benefit of being able to cache all my taken actions.
-
-This way I can run a report or do a data migration on our **staging environment** and then use the cached version on **production**. No need to do the same thing twice.
+This approach also has the added benefit of being able to cache all my taken actions. This way I can run a report or do a data migration on our **staging environment** and then use the cached version on **production**. No need to do the same thing twice.
 
 ## Grab Your Auth Token
 
