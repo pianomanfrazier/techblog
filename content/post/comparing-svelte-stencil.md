@@ -1,7 +1,7 @@
 +++
-title = "New Web Tech 2019"
-date = 2019-05-30T21:57:18-06:00
-draft = true
+title = "Comparing Svelte and Stencil JS Frameworks"
+date = 2019-06-12
+draft = false
 markup = "mmark"
 +++
 
@@ -13,9 +13,9 @@ Both frameworks are web compiler frameworks. Meaning, they take some source inpu
 
 ## Stencil
 
-Stencil was created and is maintained by the Ionic Framework team. The focus is on using web standards, like custom web components, or future web standards and not the opinions of a particular framework or build tools.
+Stencil was created and is maintained by the Ionic Framework team. The focus is on using web standards, like custom web components, and not the opinions of a particular framework or build tools.
 
-Since it generates standard web components the components can be used in any JavaScript framework. It leverages modern browser APIs like [Custom Elements](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements). It supports IE11 and up.
+Since it generates standard web components, the components can be used in any JavaScript framework. It leverages modern browser APIs like [Custom Elements](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements). It supports IE11 and up.
 
 Stencil also provides support for TypeScript and JSX. Here is an example component.
 
@@ -52,14 +52,16 @@ Usage
 
 ## Svelte
 
+Svelte seems like it has been around longer since it is at version 3. Some of the features of Svelte are:
+
 - No virtual DOM
 - No runtime (all work done at compile time)
 
 `.svelte` files are very similar to Vue single file components. A `.svelte` file can have 3 sections a script tag with the business logic, a style tag with CSS, and finally markup.
 
-The markup differs from a Vue component because you don't need a root level element.
+The markup, or template section, differs from a Vue component because you don't need a root level element.
 
-Here is an example component. I went through the tutorial in their documentation and combined all the parts I found useful or interesting.
+Here is an example component. I went through the tutorial in their documentation and combined all the parts I found useful or interesting into a compact example.
 
 ```html
 <script>
@@ -124,16 +126,18 @@ Svelte works with the following build tools.
 
 For generating larger projects, similar to the Vue CLI, see [Sapper](https://sapper.svelte.dev/). It supports routing, server-side rendering, and code-splitting.
 
-## Compare With [Real World App](https://github.com/gothinkster/realworld)
+## Bundle Size Comparisons
+
+I thought it would be interesting to compare the outputs of each of these frameworks with the [Real World App](https://github.com/gothinkster/realworld). I went to the demo page of each implementation and compared the network statistics in the network tab in my browser's dev tools (Firefox).
 
 {{< figure
   src="/img/new-web-tech-2019/compare.svg"
   alt=    "Comparison Bar Chart"
   title=  "Comparison Bar Chart"
-  caption="RealWorld App JS Asset Size"
+  caption="**RealWorld App**"
 >}}
 
-| Framework | Number of JS Files | JS size (KB) | % |
+| Framework | Number of JS Files | JS bundle size (KB) | % |
 |-----------|---:|----------:|----:|
 | Svelte    | 7  | 43.54    | 4 |
 | Stencil   | 10 | 120.06    | 12 |
@@ -143,6 +147,7 @@ For generating larger projects, similar to the Vue CLI, see [Sapper](https://sap
 | Vue       | 6  | 218.13    | 21  |
 | Elm       | 1  |  90.52    | 9  |
 
+## Network Charts From Dev Tools
 
 {{< figure
   src="/img/new-web-tech-2019/svelte-network-performance.png"
@@ -157,8 +162,6 @@ For generating larger projects, similar to the Vue CLI, see [Sapper](https://sap
   title="Stencil Asset Size"
   caption="Stencil Asset Size"
 >}}
-
-## Compare With Angular, React, and Elm
 
 {{< figure
   src="/img/new-web-tech-2019/angular-network-performance.png"
@@ -188,3 +191,12 @@ For generating larger projects, similar to the Vue CLI, see [Sapper](https://sap
   caption="Elm Asset Size"
 >}}
 
+A great future side project would be to generate these statistics for all the implementations of the RealWorld App. After scraping the project's REAMDE for the projects, you could use something like Selenium to hit each demo page and gather all the stats.
+
+## Conclusion
+
+The new generation of JS frameworks seem more focused on bundle size. I thought nothing would be able to beat Elm's bundle size. Svelte proved me wrong.
+
+After a brief look at these two frameworks, I would use Svelte as a replacement for Vue. It seems to provide a similar API.
+
+I would use Stencil if I was concerned about sharing my component with the JS community and needed it to work across any JS framework.
