@@ -48,7 +48,7 @@ Usage
 <my-first-component name="Max"></my-first-component>
 ```
 
-[Learning resources](https://stenciljs.com/resources)
+See [learning resources](https://stenciljs.com/resources) for more guides and tutorials.
 
 ## Svelte
 
