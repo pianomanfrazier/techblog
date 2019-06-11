@@ -108,8 +108,9 @@ Here is an example component. I went through the tutorial in their documentation
 
 <Nested title="nested"/>
 ```
-Nested.svelte
 ```html
+<!-- Nested.svelte -->
+
 <script>
   // export props and give it a default (optional)
   export let title = 'Title';
