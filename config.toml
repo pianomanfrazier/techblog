@@ -19,6 +19,7 @@ pygmentscodefences = true
 	dateform = "January 2, 2006"
   github = "pianomanfrazier"
   linkedin = "pianomanfrazier"
+	twitter = "pianomanfrazier"
   rss = true
 
 [[menu.main]]
