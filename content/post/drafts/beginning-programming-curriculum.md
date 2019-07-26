@@ -1,0 +1,215 @@
++++
+title = "Beginning Programming Curriculum"
+date = 2019-07-25T20:36:51-06:00
+draft = true
+markup = "mmark"
++++
+
+Use python mu editor
+
+Fill out the following program.
+
+## Lesson 1
+
+```py
+# print out your name
+
+
+# ask for someones name and then respond by saying hi to them
+
+
+# count to 5 
+
+
+# now count to 100
+
+
+# when counting to 20
+# if the number is 15 print something funny
+
+
+# if the number is 5 print something else
+
+
+# now count by 5s to 25
+
+
+```
+
+This introduces:
+
+- print statements
+- for loops
+- getting input from the user
+- if statements
+
+### Solutions
+
+```py
+# print out your name
+print('bob')
+```
+
+```py
+# ask for someones name and then respond by saying hi to them
+name = input('What is your name?')
+print('Hi ', name)
+```
+
+```py
+# count to 5 
+print(1)
+print(2)
+print(3)
+print(4)
+print(5)
+
+# or better
+for number in range(1,6):
+  print(number)
+```
+
+```py
+# now count to 100
+for number in range(1,101):
+  print(number)
+```
+
+```py
+# when counting to 20
+# if the number is 15 print something funny
+for number in range(1,21):
+  if number == 15:
+    print('Snurp')
+  else:
+    print(number)
+```
+
+```py
+# if the number is 5 print something else
+for number in range(1,21):
+  if number == 15:
+    print('Snurp')
+  elif number == 5:
+    print('Glarp')
+  else:
+    print(number)
+```
+
+```py
+# now count by 5s to 25
+
+# several ways to do this
+# ----- 1 -----
+# Use a while loop
+num = 0
+while num < 26:
+  num = num + 5
+  print(num)
+
+# ----- 2 -----
+# Use a for loop
+for number in range(1,6):
+  print(number * 5)
+
+for number in range(1,30,5):
+  print(number)
+
+```
+
+## Functions
+
+You already have been introduced to a function. `print()` is a function. You put something in and it does something. In this case you put in a message and it print it out for you. Also `input()` is also a function. Beside just printing something out it also captures user input.
+
+A function is a black box. Put something in one side and get and output on the other.
+
+Here is the add 5 to any number box. Put in a number and spit out a number that has 5 added to it.
+
+```py
+def add5(num):
+  print(num + 5)
+```
+
+How about add 2 numbers
+
+```py
+def add(num1, num2):
+  print(num1 + num2)
+```
+
+Explore making functions and then combining them.
+
+```py
+add(5,add5(3))
+```
+
+What should this output? This is a basic math question.
+
+What about this?
+
+```py
+add5(add(1,2))
+```
+
+## Text Adventure Game
+
+By combining functions, if statements, and user input create a basic text adventure game.
+
+```py
+print('You are in a dark room. You see 2 doors.')
+answer = input('Do you go right(r) or left(l)?')
+if answer == 'l':
+  print('You take the left door')
+  print('You see a strange little man sitting on a chair.')
+  answer = input('Do you talk to him?(y) or (n)')
+    if answer == 'y':
+      print('...')
+    elif answer == 'n':
+      print('...')
+elif answer == 'r':
+  print('You take the right door')
+  answer = input('...')
+  # and so forth
+```
+
+## Tic-Tac-Toe
+
+Guide them through buiding up pieces of the game.
+
+Here is what I start with.
+
+```py
+def print_grid(grid)
+  print(' {} | {} | {} '.format(grid[0], grid[1], grid[2]))
+  print('-----------')
+  print(' {} | {} | {} '.format(grid[3], grid[4], grid[5]))
+  print('-----------')
+  print(' {} | {} | {} '.format(grid[6], grid[7], grid[8]))
+
+# store answers
+def get_user_input():
+  print(' 0 | 1 | 2 ')
+  print('-----------')
+  print(' 3 | 4 | 5 ')
+  print('-----------')
+  print(' 6 | 7 | 8 ')
+  answer = input('Where do you want to move?')
+  return answer
+
+grid = [' '] * 9
+print_grid(grid)
+
+# 1. put an 'x' or an 'o' in a spot in the grid
+# 2. be able to ask for player 1 and player 2
+# 3. don't let a player place a spot already taken
+# 4. determine when the game is over
+# 5. write a game loop to play the game
+```
+
+## Next Items
+
+- worm game with PyGame
+- block game with PyGame
+- augment previous games with sprites
+- add some sounds on collision events
+- add a game controller (can't be done with PyGame Zero)
