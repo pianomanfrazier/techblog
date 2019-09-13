@@ -5,9 +5,17 @@ draft = true
 markup = "mmark"
 +++
 
-Use python mu editor
+My 8 year old daughter has been begging me to teach her how to program. I am putting all my notes here of the different exercises I have given her.
 
-Fill out the following program.
+I try to make it an exploratory process. I start by giving her a little information and then we play with it and see many different ways of using it.
+
+The Mu Editor is very friendly. I let her explore the buttons and see what things do.
+
+## Get the Mu Editor
+
+See the [download page](https://codewith.mu/en/download) and follow the instructions.
+
+When you get it up and running copy and paste lesson 1 into the window.
 
 ## Lesson 1
 
