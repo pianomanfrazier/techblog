@@ -214,10 +214,47 @@ print_grid(grid)
 # 5. write a game loop to play the game
 ```
 
+## Exploring The Mu Plotter
+
+Start by plotting just a single number.
+
+```py
+import numpy as np
+import random
+from time import sleep
+
+num = 5
+while True:
+  sleep(0.5) 
+  print((num,))
+```
+
+Then change the number by incrementing it.
+
+```py
+num = 5
+while True:
+  num = num + 1
+  sleep(0.5) 
+  print((num,))
+```
+
+What happens when you add by a different number? Subtract? What if you increase the sleep time?
+
+### Exercises
+
+TODO: add some screen shots and have kids replicate the images.
+
+- Plot a saw tooth wave by incrementing the number. When it gets too high reset it back to zero.
+- Plot a square wave by incrementing up to a point and then decrement.
+- Plot a sin wave with `np.sin()`
+- Combine a sin wave plot with a square wave.
+
 ## Next Items
 
 - worm game with PyGame
-- block game with PyGame
+- break out game with PyGame
 - augment previous games with sprites
 - add some sounds on collision events
 - add a game controller (can't be done with PyGame Zero)
+
