@@ -127,22 +127,28 @@ for number in range(1,30,5):
 
 ## Functions
 
-You already have been introduced to a function. `print()` is a function. You put something in and it does something. In this case you put in a message and it print it out for you. Also `input()` is also a function. Beside just printing something out it also captures user input.
+You already know a function. `print()` is a function. You put something in and it does something.
 
-A function is a black box. Put something in one side and get and output on the other.
+In this case you put in a message and it prints it out for you.
+
+Also `input()` is a function. Besides just printing something out, it also captures user input.
+
+A function is a black box. Put something in one side and get and output on the other. It may do stuff as a result (a side effect) or just do something.
 
 Here is the add 5 to any number box. Put in a number and spit out a number that has 5 added to it.
 
+
+
 ```py
 def add5(num):
-  print(num + 5)
+  return num + 5
 ```
 
 How about add 2 numbers
 
 ```py
 def add(num1, num2):
-  print(num1 + num2)
+  return num1 + num2
 ```
 
 Explore making functions and then combining them.
