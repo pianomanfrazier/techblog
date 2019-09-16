@@ -1,7 +1,7 @@
 +++
 title = "Elm Conf 2019 Overview"
-date = 2019-09-12T12:49:42-06:00
-draft = true
+date = 2019-09-18
+draft = false
 tags = ["elm"]
 hasMath= true
 +++
