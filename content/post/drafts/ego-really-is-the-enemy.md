@@ -118,5 +118,10 @@ When you overcome the confusion you have actually learned something. If you are 
 [^whatthebestcollegesdo]: *What the Best College Teachers Do*
 
 
+> In my walks every man I meet is my superior in some way, and in that I learn from him.
+Quote: -- Ralph Waldo Emerson
 
+> That which we persist in doing becomes easier, not that the nature of the task has changed,
+> but our ability to do has increased
+Quote: -- Ralph Waldo Emerson
 
