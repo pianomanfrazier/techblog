@@ -254,7 +254,7 @@ Her comics were comic themed. She even had a commissioned drawing by the comic i
 
 Her goal was to do a 7 degrees of Kevin Bacon thing with the comic character Squirrel Girl.
 
-Squirrel Girl is a good candidate because she is in relatively few commics but she has met some key characters in the Marvel universe like Iron Man, Craven the Hunter, and Galaxtos (probably butchered the names, I don't do comics).
+Squirrel Girl is a good candidate because she is in relatively few comics but she has met some key characters in the Marvel universe like Iron Man, Craven the Hunter, and Galactus (probably butchered the names, I don't do comics).
 
 Squirrel Girl is an efficient root of the graph because her primary connections are few.
 
