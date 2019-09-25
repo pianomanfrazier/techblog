@@ -7,24 +7,25 @@ markup = "mmark"
 
 ## Table of Contents
 
-- [app.KnowYourTheory.com](#appknowyourtheory)
-- [KnowYourTheory.com](#knowyourtheorycom)
+- [KnowYourTheory](#knowyourtheory)
 - [Elm Piano Teacher](#elm-piano-teacher)
 - [Lilypond in Markdown](#lilypond-in-markdown)
+- [Popcorn Cove Subscriptions](#popcorn-cove-subscriptions)
 - [Lemmings Clone](#lemmings-clone)
 - [Dr Doug's Pediatrics](#dr-dougs-pediatrics)
 
-## App.KnowYourTheory
+## KnowYourTheory
 
 [![Know Your Theory app thumbnail](/img/projects/know-your-theory-thumbnail.png)](https://app.knowyourtheory.com)
 
-The app: https://app.knowyourtheory.com
+- The Website: https://knowyourtheory.com
+- The app: https://app.knowyourtheory.com
 
 This is the music learning platform I have been working on since fall of 2018. The front end is all in Elm.
 
 I gave a talk at [Elm Conf 2019](/speaking#elm-conf-2019) about how I built this app. 
 
-I am currently working on a backend using a serverless/JAMstack architecture using Netlify.
+I am currently working and planning out the backend. My current plan is the following:
 
 - netlify identity for authorization and authentication
 - PouchDB/CouchDB for storing user data using IBM's [cloudant](https://www.ibm.com/cloud/cloudant)
@@ -32,14 +33,6 @@ I am currently working on a backend using a serverless/JAMstack architecture usi
 
 And [here](https://www.knowyourtheory.com/posts/planned-features/) are some of my ideas for my next features.
 
-
-## KnowYourTheory.com
-
-[![Know Your Theory website](/img/projects/know-your-theory.png)](https://knowyourtheory.com)
-
-The website: https://knowyourtheory.com
-
-I needed a website to talk about the app. I built this with the [Eleventy](https://www.11ty.io/) static site generator.
 
 ## Elm Piano Teacher
 
@@ -80,15 +73,30 @@ It uses
 
 I then stitch all the sound and audio stuff together using vanilla JavaScript.
 
+## Popcorn Cove Subscriptions
+
+{{< youtube P_8gmr_Ol-4 >}}
+
+I built an app to help manage subscription boxes for a popcorn candy store my sister and brother-in-law run in Washington.
+
+- GitHub: https://github.com/pianomanfrazier/popcorncove_subscriptions
+
+The app is built with the following
+
+- deployed on Heroku
+- python flask
+- PostgresDB
+- VueJS with Vuetify for the UI
+
 ## Lemmings Clone
+
+{{< youtube knKsHbLo6Yc >}}
 
 - GitHub: https://github.com/pianomanfrazier/lemmings-clone
 
 I built this for my game development class in [vanilla javascript](http://vanilla-js.com/). It uses no game engine so we had to program the game loop ourselves. I learned a lot about sprite sheets and managing game state.
 
 The levels that you see in the game were described in CSV. My goal for this was to have users be able to create their own levels and upload them. I never got that far.
-
-{{< youtube knKsHbLo6Yc >}}
 
 
 ## Dr Doug's Pediatrics
