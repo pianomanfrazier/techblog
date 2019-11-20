@@ -25,4 +25,4 @@ date = "2019-10-23"
 
 <p class="text-large">Planned launch date: <date>Friday, Dec. 13 2019</date></p>
 
-<a class="link-btn text-large bg-red" href="https://gumroad.com/l/NwMtt">Pre-order the book for $40</a>
+<a class="link-btn text-large bg-red" href="https://gumroad.com/l/NwMtt">Pre-order the book for $20</a>
