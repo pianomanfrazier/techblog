@@ -8,6 +8,10 @@ date = "2019-11-22"
 
 ![Elm Calculator Book Cover](/img/courses/elm-calculator-book-cover.jpg)
 
+<p class="text-large">Planned launch date: <date>Friday, Nov. 29 2019</date></p>
+
+<a class="link-btn text-large bg-red" href="https://gumroad.com/l/NwMtt">Pre-order the book for $20</a>
+
 {{< vimeo 374995850 >}}
 
 - [Table of Contents](#table-of-contents)
@@ -24,15 +28,11 @@ date = "2019-11-22"
 
 ### What's included?
 
-1. You get a **ebook** (PDF, mobi, epub) explaining step by step how to build the app.
+1. You get an **ebook** (63 page PDF, mobi, and epub) explaining step by step how to build the app.
 1. Each chapter has the resulting code in [ellie-app](https://ellie-app.com)
 1. You get access to the **code**. Each chapter is tagged with git so you can see the app in its current state while we build it.
 1. **HTML diffs**. You can see a diff of the code each chapter and see the changes as the app is developed.
 1. **Videos** for some of the things that were hard to explain in writing.
-
-<p class="text-large">Planned launch date: <date>Friday, Dec. 13 2019</date></p>
-
-<a class="link-btn text-large bg-red" href="https://gumroad.com/l/NwMtt">Pre-order the book for $20</a>
 
 ### Table of Contents
 
