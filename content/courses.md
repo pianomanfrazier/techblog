@@ -12,10 +12,17 @@ date = "2019-11-22"
 
 <a class="link-btn text-large bg-red" href="https://gumroad.com/l/NwMtt">Pre-order the book for $20</a>
 
-{{< vimeo 374995850 >}}
-
 - [Table of Contents](#table-of-contents)
 - [PDF sample](/files/elm-calculator-sample.pdf)
+
+### Final Calculator Demo
+
+{{< vimeo 374995850 >}}
+
+### Using the course materials
+
+{{< vimeo 375031361 >}}
+
 
 ### Things covered in the course
 
