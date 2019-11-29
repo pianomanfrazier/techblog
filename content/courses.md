@@ -8,6 +8,8 @@ date = "2019-11-22"
 
 ![Elm Calculator Book Cover](/img/courses/elm-calculator-book-cover.jpg)
 
+This book uses Elm version 0.19.
+
 <p class="text-large">Planned launch date: <date>Friday, Nov. 29 2019</date></p>
 
 <a class="link-btn text-large bg-red" href="https://gumroad.com/l/NwMtt">Pre-order the book for $20</a>
