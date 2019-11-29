@@ -4,15 +4,15 @@ lastUpdate = true
 date = "2019-11-22"
 +++
 
-## Learn Elm by Example --- Code a calculator using Elm from scratch
+## Learn Elm by example --- Code a calculator using Elm from scratch
 
 ![Elm Calculator Book Cover](/img/courses/elm-calculator-book-cover.jpg)
 
 This book uses Elm version 0.19.
 
-<p class="text-large">Planned launch date: <date>Friday, Nov. 29 2019</date></p>
+<script src="https://gumroad.com/js/gumroad.js"></script>
+<a class="link-btn text-large bg-red" href="https://gumroad.com/l/NwMtt">Buy the book for $20</a>
 
-<a class="link-btn text-large bg-red" href="https://gumroad.com/l/NwMtt">Pre-order the book for $20</a>
 
 - [Table of Contents](#table-of-contents)
 - [PDF sample](/files/elm-calculator-sample.pdf)
