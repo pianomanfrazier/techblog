@@ -39,7 +39,6 @@ date = "2019-11-22"
 1. Each chapter has the resulting code in [ellie-app](https://ellie-app.com)
 1. You get access to the **code**. Each chapter is tagged with git so you can see the app in its current state while we build it.
 1. **HTML diffs**. You can see a diff of the code each chapter and see the changes as the app is developed.
-1. **Videos** for some of the things that were hard to explain in writing.
 
 ### Table of Contents
 
