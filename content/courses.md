@@ -1,7 +1,7 @@
 +++
 title = "Courses"
 lastUpdate = true
-date = "2019-11-22"
+date = "2019-12-12"
 +++
 
 ## Learn Elm by example --- Code a calculator using Elm from scratch
@@ -16,6 +16,7 @@ This book uses Elm version 0.19.
 
 - [Table of Contents](#table-of-contents)
 - [PDF sample](/files/elm-calculator-sample.pdf)
+- [Project demo](https://elm-calculator.netlify.com/)
 
 ### Final Calculator Demo
 
