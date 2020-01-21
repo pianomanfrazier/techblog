@@ -1,7 +1,7 @@
 +++
 title = "Add Tags to Hugo Theme"
-date = 2019-06-10T08:28:21-06:00
-draft = true
+date = 2019-09-25
+draft = false
 markup = "mmark"
 +++
 
@@ -17,14 +17,13 @@ Here is a imple way to add tag support. You will need two files.
 {{ partial "header.html" . }}
 
 <section>
-  <h1>Tag: {{ .Title }}</h1>
+  <h1>Tags</h1>
   <ul>
-    {{ range .Pages }}
+    {{ range .Data.Terms.Alphabetical }}
       <li>
-        <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-        <div id=date>
-          <time>{{ .Date.Format (.Site.Params.dateform | default "January 2006") }}</time>
-        </div>
+        <h2>
+          <a href="{{ .Page.Permalink }}">({{ .Count }}) {{ .Page.Title }}</a>
+        </h2>
       </li>
     {{ end }}
   </ul>
@@ -43,10 +42,10 @@ Here is a imple way to add tag support. You will need two files.
   <ul>
     {{ range .Pages }}
       <li>
-        <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-        <div id=date>
-          <time>{{ .Date.Format (.Site.Params.dateform | default "January 2006") }}</time>
-        </div>
+        <h2>
+          <a href="{{ .Permalink }}">{{ .Title }}</a>
+        </h2>
+        <time>{{ .Date.Format (.Site.Params.dateform | default "January 2006") }}</time>
       </li>
     {{ end }}
   </ul>

@@ -14,18 +14,24 @@ pygmentscodefences = true
   page = ["HTML"]
 
 [params]
-	sitename = "Ryan Frazier's Blog"
-	description = "Ramblings of Ryan Frazier: Programmer, Musician, and Educator"
-	dateform = "January 2, 2006"
+  sitename = "Ryan Frazier's Blog"
+  description = "Ramblings of Ryan Frazier: Programmer, Musician, and Educator"
+  dateform = "January 2, 2006"
   github = "pianomanfrazier"
   linkedin = "pianomanfrazier"
-	twitter = "pianomanfrazier"
+  twitter = "pianomanfrazier"
   rss = true
 
 [[menu.main]]
-	name = "About"
-	url  = "/about"
+  name = "About"
+  url  = "/about"
 [[menu.main]]
-    name = "Tags"
-    url  = "/tags"
+  name = "Speaking"
+  url  = "/speaking"
+[[menu.main]]
+  name = "Projects"
+  url  = "/projects"
+[[menu.main]]
+  name = "Tags"
+  url  = "/tags"
 
