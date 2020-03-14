@@ -9,7 +9,7 @@ To add support for tags in a Hugo theme you need two pieces. One template to ren
 
 Hugo's template [lookup order](https://gohugo.io/templates/lookup-order/) can be overwhelming. I recognize it's power, but to add a simple feature to a blog theme it can be too much.
 
-Here is a imple way to add tag support. You will need two files.
+Here is a simple way to add tag support. You will need two files.
 
 ```go-html-template
 {{/* layouts/taxonomy/terms.html */}}

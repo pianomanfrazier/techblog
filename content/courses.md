@@ -6,12 +6,14 @@ date = "2019-12-12"
 
 ## Learn Elm by example --- Code a calculator using Elm from scratch
 
+*Update March 14, 2020: I have decided to publish this book also here on my blog as a series of blog posts. See the ["elm calculator book"](/tags/elm-calculator-book/) tag for all published chapters. If you benefited from my work please support me by purchasing the book [on Gumroad](https://gum.co/NwMtt).*
+
 ![Elm Calculator Book Cover](/img/courses/elm-calculator-book-cover.jpg)
 
 This book uses Elm version 0.19.
 
 <script src="https://gumroad.com/js/gumroad.js"></script>
-<a class="link-btn text-large bg-red" href="https://gumroad.com/l/NwMtt">Buy the book for $20</a>
+<a class="link-btn text-large bg-red" href="https://gumroad.com/l/NwMtt">Get the book</a>
 
 
 - [Table of Contents](#table-of-contents)
