@@ -46,3 +46,5 @@ update msg model =
 ```
 
 And that's it. We now have key combos.
+
+The next chapter will cover testing. We will write a test using elm-test and elm-program-test to verify our calculator.

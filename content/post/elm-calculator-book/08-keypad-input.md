@@ -174,3 +174,5 @@ update msg model =
 I used a small trick here. When we get a key matching one of our cases, just call the appropriate update function again. 
 
 What I hope you take away from this chapter is how nice it is to refactor things in Elm. We made some sweeping changes to our application and the compiler was able to help us out.
+
+Now that we have keyboard input, it would be nice if the user had some more options for deleting the stack frames. The next chapter will cover using key combinations such as ctrl-shift-delete to clear out the frames.

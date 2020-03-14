@@ -219,3 +219,5 @@ inputBox num =
         [ text <| String.fromFloat num
         ]
 ```
+
+Now that we have something looking decent, we can start on programming the behavior of our calculator.

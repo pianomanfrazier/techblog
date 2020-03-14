@@ -169,3 +169,5 @@ If all goes well you should see the following output.
 ![Hello Elm](/img/elm-calculator/hello-elm-screen-shot.png)
 
 For more information about the options to elm-live see the documentation [here](https://www.elm-live.com/).
+
+Now that we have the project setup we can begin to work on our application. The next chapter will start with adding CSS to make the calculator look good. I like to look at something pretty before I have to stare at it for a couple hours.

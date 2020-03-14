@@ -10,11 +10,24 @@ tags = ["elm", "elm calculator book"]
 
 A few months ago I finished writing a book on building a calculator in elm. Over the next few months I will be publishing each chapter of the book as a series of blog posts.
 
+- Part 1 - Introduction
+- Part 2 - Project Setup
+- Part 3 - Add CSS
+- Part 4 - Basic Operations
+- Part 5 - Adding Decimal Support
+- Part 6 - Supporting Negative Numbers
+- Part 7 - Add Dirty State
+- Part 8 - Support Keypad Input
+- Part 9 - Combination Key Input
+- Part 10 - Testing
+- Part 11 - Netlify Deployment
+
 ## Final project demo
 
 {{< vimeo 374995850 >}}
 
-**Demo link:** <https://elm-calculator.netlify.com>
+- **Demo link:** <https://elm-calculator.netlify.com>
+- **Git Repo:** <https://gitlab.com/pianomanfrazier/elm-calculator>
 
 ## Who is this book for?
 
@@ -149,3 +162,5 @@ We already process the simple example "1 + 2" on the stack. Let's go through a m
 The process on the stack is similar to how we would have collapse the tree by hand. We take the bottom most thing we can compute and stick the numbers on the stack. When we get to an operator we evaluate it and stick it on the stack.
 
 Hopefully you can see now that we can skill the parsing and building of a tree by just using the stack directly with an RPN calculator. The user won't be allowed to enter in an invalid equation.
+
+In the next post we will setup our elm project. See you there.

@@ -99,3 +99,5 @@ all =
 ```
 
 This simulates a user clicking on the number and operator buttons. It then checks that the number 60 is somewhere on the page. Try playing with this and adding another test.
+
+The next and last chapter will cover deploying our Elm application to netlify. If you got this far, congratulations! We're almost finished. I get a lot of satisfaction with web projects because they are so easy to share with the world. I'll show you how in the next chapter.

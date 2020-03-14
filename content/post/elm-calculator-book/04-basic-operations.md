@@ -394,3 +394,5 @@ update msg model =
 ```
 
 For the `Back` message we need to undo what we did to create larger numbers. This is getting awkward to do this math to input numbers and will have its limitations when we deal with decimal numbers. We will fix that in the next chapter.
+
+How that we have some basic operations done, the next chapter will introduce decimal numbers.

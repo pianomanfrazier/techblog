@@ -70,3 +70,5 @@ InputNumber num ->
             , dirty = False
         }
 ```
+
+The next chapter is going to add support for users to enter numbers into the calculator using their number pad on their keyboard.
