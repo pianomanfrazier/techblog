@@ -66,3 +66,76 @@ Ryan Frazier is a pianist, music teacher, and web developer. He grew up playing 
 Ryan holds Master's and Bachelor's degrees in Piano Performance. He also has a B.S. in Computer Science.
 
 As a side project, Ryan has been building music teaching tools on the web using Elm.
+
+## Follow Up Question from Oslo Elm Days
+
+> Hey, Ryan! We went through the CFPs today. The others commented that they would like to know more about what distinct Elm features you would focus on. Could you elaborate a little on that?
+>
+>
+
+- domain driven design using elm types
+- Types
+- Records
+- elm-css
+- styled-svg
+
+Note type and records.
+
+```elm
+type NoteName
+    = C
+    | D
+    | E
+    | F
+    | G
+    | A
+    | B
+
+type Accidental
+    = DoubleSharp
+    | Sharp
+    | Natural
+    | None
+    | Flat
+    | DoubleFlat
+
+type alias Note =
+    { name : NoteName
+    , octave : Int
+    , accidental : Accidental
+    }
+
+type Clef
+    = Treble
+    | Bass
+    | Tenor
+    | Alto
+
+-- stack notes vertically e.g. a chord
+renderNoteStack : Clef -> List Note -> Svg msg
+
+-- render a melody horizontally (or succession of chords)
+renderNotes : Clef -> List (List Note) -> Svg msg
+```
+
+### Why use Elm?
+
+Types is great for modeling problems. If you can model your domain well in the data structures, the problem is a lot easier to work with.
+
+I have built a library in Elm to compute music theory concepts such as chords, intervals, inversions and so on. I now need a way to render it.
+
+Sure, that is fair.
+
+I talked in depth about modeling music theory concepts in a previous Elm conference talk. I should add a section to this talk about modeling the problem in types and records.
+
+I love using Elm for music because of the type system. I can model music concepts in Elm types and records and the code reads almost like real english. `getScale (Note C 4 Sharp) Major` or `type Clef = Treble | Bass` or `type Accidental = Flat | Sharp`.
+
+This kind of modeling is not possible without types. You either resort to parsing strings or defining enums (like in TypeScript), which is not as elegant or robust. After you have modeled your problem in this way, the Elm compiler will guide you through thinking about all the edge cases of the problem.
+
+Would you like me to tweak my proposal or is this Twitter chat sufficient?
+
+Note names as Types
+
+Build nice data structures around the problem and then process them with Elm. Notes, intervals, chords, lists of notes -> output to SVG. How do we lay out the music?
+
+
