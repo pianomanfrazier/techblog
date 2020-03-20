@@ -1,12 +1,12 @@
 +++
 title = "Elm Calculator Part 8 - Support Keypad Input"
-date = 2020-05-04
+date = 2020-05-01
 draft = false
 markup = "mmark"
 tags = ["elm", "elm calculator book"]
 +++
 
-{{< elmCalcBookBlurb >}}
+{{< elmCalcBookTOC num="8">}}
 
 - ***browse:*** <https://gitlab.com/pianomanfrazier/elm-calculator/-/tree/v0.8>
 - ***diff:*** <https://gitlab.com/pianomanfrazier/elm-calculator/-/compare/v0.7...v0.8>
@@ -82,6 +82,7 @@ It will need to change from
 ```elm
 update : Msg -> Model -> Model
 ```
+
 to
 
 ```elm
@@ -171,7 +172,7 @@ update msg model =
                 _ -> ( model, Cmd.none )
 ```
 
-I used a small trick here. When we get a key matching one of our cases, just call the appropriate update function again. 
+I used a small trick here. When we get a key matching one of our cases, just call the appropriate update function again.
 
 What I hope you take away from this chapter is how nice it is to refactor things in Elm. We made some sweeping changes to our application and the compiler was able to help us out.
 

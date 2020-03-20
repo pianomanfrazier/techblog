@@ -1,12 +1,12 @@
 +++
 title = "Elm Calculator Part 4 - Basic Operations"
-date = 2020-04-06
+date = 2020-04-03
 draft = false
 markup = "mmark"
 tags = ["elm", "elm calculator book"]
 +++
 
-{{< elmCalcBookBlurb >}}
+{{< elmCalcBookTOC num="4">}}
 
 - ***browse:*** <https://gitlab.com/pianomanfrazier/elm-calculator/-/tree/v0.3>
 - ***diff:*** <https://gitlab.com/pianomanfrazier/elm-calculator/-/compare/v0.2...v0.3>
@@ -103,7 +103,7 @@ view model =
             ++ [ inputBox model.currentNum
                , section
                ]
-        ) 
+        )
 
 ```
 
@@ -263,12 +263,12 @@ case model.stack of
     -- the stack is empty to do nothing
     [] ->
         -- just return the model
-        model      
-    
+        model
+
     -- x is the head of the list
     -- xs is the rest of the list
     x :: xs ->
-       -- do stuff here 
+       -- do stuff here
 ```
 
 Let's talk about this pattern a little more. I know for myself coming from Python or JavaScript this looks really weird. Why can't we just do a `foreach` over the list? In Elm there is no such thing as a for loop. Processing a list is a recursive operation.

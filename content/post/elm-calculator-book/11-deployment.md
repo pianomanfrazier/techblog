@@ -1,12 +1,12 @@
 +++
 title = "Elm Calculator Part 11 - Netlify Deployment"
-date = 2020-05-25
+date = 2020-05-22
 draft = false
 markup = "mmark"
 tags = ["elm", "elm calculator book"]
 +++
 
-{{< elmCalcBookBlurb >}}
+{{< elmCalcBookTOC num="11">}}
 
 - ***browse:*** <https://gitlab.com/pianomanfrazier/elm-calculator/-/tree/master>
 - ***diff:*** <https://gitlab.com/pianomanfrazier/elm-calculator/-/commit/e2b92f39f910329dc7b882be9ac2b82b44a09f00>

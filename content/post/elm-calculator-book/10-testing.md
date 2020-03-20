@@ -1,12 +1,12 @@
 +++
 title = "Elm Calculator Part 10 - Testing"
-date = 2020-05-18
+date = 2020-05-15
 draft = false
 markup = "mmark"
 tags = ["elm", "elm calculator book"]
 +++
 
-{{< elmCalcBookBlurb >}}
+{{< elmCalcBookTOC num="10">}}
 
 - ***browse:*** <https://gitlab.com/pianomanfrazier/elm-calculator/-/tree/master>
 - ***diff:*** <https://gitlab.com/pianomanfrazier/elm-calculator/-/commit/c5c32b5c0566b8034fc723e8e0f7ffdf2f6db70c>
@@ -40,7 +40,7 @@ The difference with `Browser.Document` is that the view function now needs a rec
 ```elm
 view : Model -> Browser.Document Msg
 view model =
-    { title = "Elm Calculator" 
+    { title = "Elm Calculator"
     , body =
         [ div []
             [ h1 [ class "h1" ] [ text "RPN Calculator" ]

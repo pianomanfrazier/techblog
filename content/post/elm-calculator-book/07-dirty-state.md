@@ -1,12 +1,12 @@
 +++
 title = "Elm Calculator Part 7 - Add Dirty State"
-date = 2020-04-27
+date = 2020-04-24
 draft = false
 markup = "mmark"
 tags = ["elm", "elm calculator book"]
 +++
 
-{{< elmCalcBookBlurb >}}
+{{< elmCalcBookTOC num="7">}}
 
 This allows users to overwrite the input area with a new number if the calculator is in a dirty state.
 

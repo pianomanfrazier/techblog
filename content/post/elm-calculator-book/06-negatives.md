@@ -1,12 +1,12 @@
 +++
 title = "Elm Calculator Part 6 - Supporting Negative Numbers"
-date = 2020-04-20
+date = 2020-04-17
 draft = false
 markup = "mmark"
 tags = ["elm", "elm calculator book"]
 +++
 
-{{< elmCalcBookBlurb >}}
+{{< elmCalcBookTOC num="6">}}
 
 - ***browse:*** <https://gitlab.com/pianomanfrazier/elm-calculator/-/tree/v0.6>
 - ***diff:*** <https://gitlab.com/pianomanfrazier/elm-calculator/-/compare/v0.5...v0.6>

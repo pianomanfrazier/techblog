@@ -1,12 +1,12 @@
 +++
 title = "Elm Calculator Part 9 - Combination Key Input"
-date = 2020-05-11
+date = 2020-05-08
 draft = false
 markup = "mmark"
 tags = ["elm", "elm calculator book"]
 +++
 
-{{< elmCalcBookBlurb >}}
+{{< elmCalcBookTOC num="9">}}
 
 - ***browse:*** <https://gitlab.com/pianomanfrazier/elm-calculator/-/tree/v0.9>
 - ***diff:*** <https://gitlab.com/pianomanfrazier/elm-calculator/-/compare/v0.9...v0.10>

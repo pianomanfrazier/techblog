@@ -6,21 +6,7 @@ markup = "mmark"
 tags = ["elm", "elm calculator book"]
 +++
 
-{{< elmCalcBookBlurb >}}
-
-A few months ago I finished writing a book on building a calculator in elm. Over the next few months I will be publishing each chapter of the book as a series of blog posts.
-
-- Part 1 - Introduction
-- Part 2 - Project Setup
-- Part 3 - Add CSS
-- Part 4 - Basic Operations
-- Part 5 - Adding Decimal Support
-- Part 6 - Supporting Negative Numbers
-- Part 7 - Add Dirty State
-- Part 8 - Support Keypad Input
-- Part 9 - Combination Key Input
-- Part 10 - Testing
-- Part 11 - Netlify Deployment
+{{< elmCalcBookTOC num="1">}}
 
 ## Final project demo
 

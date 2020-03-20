@@ -1,12 +1,12 @@
 +++
 title = "Elm Calculator Part 2 - Project Setup"
-date = 2020-03-23
+date = 2020-03-20
 draft = false
 markup = "mmark"
 tags = ["elm", "elm calculator book"]
 +++
 
-{{< elmCalcBookBlurb >}}
+{{< elmCalcBookTOC num="2">}}
 
 - ***browse:*** <https://gitlab.com/pianomanfrazier/elm-calculator/-/tree/v0.1>
 - ***ellie:*** <https://ellie-app.com/72nScWrSMfVa1>

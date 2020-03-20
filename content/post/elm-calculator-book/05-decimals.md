@@ -1,12 +1,12 @@
 +++
 title = "Elm Calculator Part 5 - Adding Decimal Support"
-date = 2020-04-13
+date = 2020-04-10
 draft = false
 markup = "mmark"
 tags = ["elm", "elm calculator book"]
 +++
 
-{{< elmCalcBookBlurb >}}
+{{< elmCalcBookTOC num="5">}}
 
 - ***browse:*** <https://gitlab.com/pianomanfrazier/elm-calculator/-/tree/v0.5>
 - ***diff:*** <https://gitlab.com/pianomanfrazier/elm-calculator/-/compare/v0.3...v0.5>
@@ -181,7 +181,6 @@ update msg model =
 ```
 
 The compiler will now tell us that there is no `error` field in our model. So let's add that.
-
 
 ```elm
 type alias Model =

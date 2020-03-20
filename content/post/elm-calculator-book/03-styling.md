@@ -1,12 +1,12 @@
 +++
 title = "Elm Calculator Part 3 - Add CSS"
-date = 2020-03-30
+date = 2020-03-27
 draft = false
 markup = "mmark"
 tags = ["elm", "elm calculator book"]
 +++
 
-{{< elmCalcBookBlurb >}}
+{{< elmCalcBookTOC num="3">}}
 
 - ***browse:*** <https://gitlab.com/pianomanfrazier/elm-calculator/-/tree/v0.2>
 - ***diff:*** <https://gitlab.com/pianomanfrazier/elm-calculator/-/compare/v0.1...v0.2>
@@ -90,7 +90,7 @@ We could also make the mistake of mixing up the arguments like `cell "1" "yellow
 
 We can have the compiler help us not make these kinds of mistakes by using types.
 
-## Elm Types for the win 
+## Elm Types for the win
 
 Let us define our custom types. This will constrain the input to our functions. It also makes the code more readable.
 
@@ -124,7 +124,7 @@ colorToString color =
         White  -> "bg-white"
 ```
 
-Now if we try to make a button like `cell Single Purple "1"`, the compiler will give us a nice error warning. 
+Now if we try to make a button like `cell Single Purple "1"`, the compiler will give us a nice error warning.
 
 ```txt
 -- NAMING ERROR --------------- /home/ryan/projects/elm-calculator/src/Main.elm
@@ -178,7 +178,7 @@ inputBox num =
         ]
 ```
 
-##  Putting it all together
+## Putting it all together
 
 ```elm
 view : Model -> Html Msg
