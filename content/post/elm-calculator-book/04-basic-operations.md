@@ -4,6 +4,9 @@ date = 2020-04-03
 draft = false
 markup = "mmark"
 tags = ["elm", "elm calculator book"]
+description = "Learn how to build a calculator with elm from scratch."
+socialImage = "img/elm-calculator/elm-calc-splash.png"
+socialImageAlt = "Elm Calculator"
 +++
 
 {{< elmCalcBookTOC num="4">}}
