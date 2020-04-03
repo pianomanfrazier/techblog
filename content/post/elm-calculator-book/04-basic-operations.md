@@ -65,8 +65,8 @@ The resulting HTML will look something like this.
     <!-- THE CALCULATOR BUTTONS -->
     <div class="section">
         ...
-    </div>
-</div>
+    </div><!-- section -->
+</div><!-- calculator -->
 ```
 
 We already created the input box in the previous chapter. We can reuse that function to display the stack.
@@ -99,7 +99,9 @@ view : Model -> Html Msg
 view model =
     div
         [ class "calculator" ]
-        (List.map inputBox (List.reverse model.stack)
+        (List.map
+            inputBox
+            (List.reverse model.stack)
             ++ [ inputBox model.currentNum
                , section
                ]
