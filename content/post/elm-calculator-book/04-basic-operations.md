@@ -161,7 +161,7 @@ section =
         [ cell ...
         , cell (onClick (InputNumber 1)) Single White "1"
         , cell (onClick (InputNumber 2)) Single White "2"
-        , cell (onClick (InputNumber 3)) Single White "2"
+        , cell (onClick (InputNumber 3)) Single White "3"
         , ...
         ]
 ```
