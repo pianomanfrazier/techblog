@@ -202,7 +202,7 @@ initialModel =
 
 We might not have an error, so we'll make the error a `Maybe`.
 
-We can also need to display the error if it exists. Let's pattern match on the error in our view to display the error.
+We also need to display the error if it exists. Let's pattern match on the error in our view to display the error.
 
 ```elm
 case model.error of
