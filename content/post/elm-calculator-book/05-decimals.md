@@ -97,7 +97,7 @@ Traceback (most recent call last):
 ValueError: could not convert string to float: 'abcd'
 ```
 
-No matter what language we are using, we need to deal with these kind of errors. In Elm it uses the `Maybe` type. JavaScript returns `NaN`, not a number. And Python throws a `ValueError`.
+No matter what language we are using, we need to deal with these kind of errors. Elm uses the `Maybe` type. JavaScript returns `NaN`, not a number. And Python throws a `ValueError`.
 
 ## The Maybe type
 
