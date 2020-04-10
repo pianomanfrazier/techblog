@@ -240,4 +240,4 @@ update msg model =
                 { model | currentNum = model.currentNum ++ "." }
 ```
 
-Now we just need to be able to input negative numbers and we will have a fully functioning calculator. The next chapter will add negative number support.
+Now we need to be able to input negative numbers and we will have a fully functioning calculator. The next chapter will add negative number support.
