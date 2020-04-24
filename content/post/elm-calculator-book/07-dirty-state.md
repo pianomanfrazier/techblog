@@ -49,7 +49,7 @@ We need to do this to the `Clear`, `Enter`, `InputOperator`, `SetDecimal`, `SetS
 
 ```elm
 Clear ->
-    { model | currentNum = "0", dirty = False
+    { model | currentNum = "0", dirty = False }
 
 Enter ->
     ...
