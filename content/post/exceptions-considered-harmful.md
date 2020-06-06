@@ -141,7 +141,7 @@ if (userResult.isOK()) {
 
 ## Other libraries
 
-[C++ std::optional](https://en.cppreference.com/w/cpp/utility/optional), `optional<T>`, is a safer way than just returning `null`.  The optional can be empty or it can hold a value of type `T`. It does not hold an error message. This is an asymmetric type union.
+[C++ std::optional](https://en.cppreference.com/w/cpp/utility/optional), `optional<T>`, is a safer way than just returning `null`.  The optional can be empty or it can hold a value of type `T`. It does not hold an error message.
 
 [C++ Result](https://github.com/oktal/result) is a header only library that implements Rust's `Result<T, E>` type. This type can hold the value or an error.
 
