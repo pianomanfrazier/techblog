@@ -25,7 +25,8 @@ function doWork() : boolean {
     // do some SIDE EFFECT
     let result = doWork();
     this.some_member_variable = result;
-
+    
+    let success = result !== null;
     if (success) {
         return true;
     } else {
