@@ -94,7 +94,7 @@ What if we wanted to both return an error message if something goes wrong and al
 
 This is the `Result` type. This is also called the `Maybe` type.
 
-This thing is baked into the standard library of newer programming languages like Rust and Elm. We have [std::result](https://doc.rust-lang.org/std/result/) in Rust and the [Maybe Type](https://guide.elm-lang.org/error_handling/maybe.html) in Elm. Some newer languages don't implement exceptions and treat **errors as data** like [Go](https://blog.golang.org/go1.13-errors), [Rust](https://doc.rust-lang.org/book/ch09-00-error-handling.html), and [Elm](https://guide.elm-lang.org/error_handling/).
+This thing is baked into the standard library of newer programming languages like Rust and Elm. We have [std::result](https://doc.rust-lang.org/std/result/) in Rust and the [Result Type](https://package.elm-lang.org/packages/elm/core/latest/Result) in Elm. Some newer languages don't implement exceptions and treat **errors as data** like [Go](https://blog.golang.org/go1.13-errors), [Rust](https://doc.rust-lang.org/book/ch09-00-error-handling.html), and [Elm](https://guide.elm-lang.org/error_handling/).
 
 Since this article is using TypeScript, I'm going to use the library [neverthrow](https://github.com/supermacro/neverthrow) but there are others to choose from. This will also work in plain JavaScript too.
 
@@ -155,10 +155,10 @@ And [here](https://github.com/jonaskello/eslint-plugin-functional) is a similar 
 
 These ideas are also being explored in other languages. Here are some libraries I found.
 
-[C++ std::optional](https://en.cppreference.com/w/cpp/utility/optional), `optional<T>`, is a safer way than just returning `null`.  The optional can be empty or it can hold a value of type `T`. It does not hold an error message.
+[C++ std::optional](https://en.cppreference.com/w/cpp/utility/optional), `optional<T>`, is a safer way than just returning `null`.  The optional can be empty or it can hold a value of type `T`. It does not hold an error message. This type is also called `Maybe` in [elm](https://guide.elm-lang.org/error_handling/maybe.html) and elsewhere.
 
 [C++ Result](https://github.com/oktal/result) is a header only library that implements Rust's `Result<T, E>` type. This type can hold the value or an error.
 
 [Python result](https://github.com/dbrgn/result) another Rust inspired result type.
 
-If you want to explore more typed functional programming in TypeScript, check out [fp-ts](https://gcanti.github.io/fp-ts/).
+If you want to explore more typed functional programming in TypeScript, check out [purify](https://gigobyte.github.io/purify/), [true myth](https://true-myth.js.org/), or the full featured [fp-ts](https://gcanti.github.io/fp-ts/).
