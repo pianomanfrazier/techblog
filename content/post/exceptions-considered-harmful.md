@@ -2,6 +2,7 @@
 title = "Exceptions Considered Harmful"
 date = 2020-06-05T13:32:21-06:00
 draft = false
+tags = ["javascript", "functional programming"]
 markup = "mmark"
 +++
 
