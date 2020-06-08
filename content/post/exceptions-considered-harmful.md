@@ -93,7 +93,7 @@ What if we wanted to both return an error message if something goes wrong and al
 
 This is the `Result` type. This is also called the `Maybe` type.
 
-This thing is baked into the standard library of newer programming languages like Rust and Elm. We have [std::result](https://doc.rust-lang.org/std/result/) in Rust and the [Maybe Type](https://guide.elm-lang.org/error_handling/maybe.html) in Elm. Most newer languages don't implement exceptions and treat **errors as data** like [Go](https://blog.golang.org/go1.13-errors), [Rust](https://doc.rust-lang.org/book/ch09-00-error-handling.html), and [Elm](https://guide.elm-lang.org/error_handling/).
+This thing is baked into the standard library of newer programming languages like Rust and Elm. We have [std::result](https://doc.rust-lang.org/std/result/) in Rust and the [Maybe Type](https://guide.elm-lang.org/error_handling/maybe.html) in Elm. Some newer languages don't implement exceptions and treat **errors as data** like [Go](https://blog.golang.org/go1.13-errors), [Rust](https://doc.rust-lang.org/book/ch09-00-error-handling.html), and [Elm](https://guide.elm-lang.org/error_handling/).
 
 Since this article is using TypeScript, I'm going to use the library [neverthrow](https://github.com/supermacro/neverthrow) but there are others to choose from. This will also work in plain JavaScript too.
 
