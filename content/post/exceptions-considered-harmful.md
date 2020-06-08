@@ -139,7 +139,17 @@ if (userResult.isOK()) {
 }
 ```
 
-## Other libraries
+If you try to retrieve `userResult.value` before you have checked `isOK()` the TS compiler won't let you. Pretty awesome.
+
+## JavaScript tooling
+
+[tslint-immutable](https://github.com/jonaskello/tslint-immutable) is a plugin for TSlint that has several options to prevent throwing exceptions. See this set of functional programming rules for TSlint [here](https://github.com/jonaskello/tslint-immutable#no-throw). Enable `no-throw` and `no-try`.
+
+And [here](https://github.com/jonaskello/eslint-plugin-functional) is a similar set of rules for eslint.
+
+## Other libraries and languages
+
+These ideas are also being explored in other languages. Here are some libraries I found.
 
 [C++ std::optional](https://en.cppreference.com/w/cpp/utility/optional), `optional<T>`, is a safer way than just returning `null`.  The optional can be empty or it can hold a value of type `T`. It does not hold an error message.
 
