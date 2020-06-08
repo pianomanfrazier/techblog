@@ -2,7 +2,7 @@
 title = "Elm Conf 2019 Overview"
 date = 2019-09-18
 draft = false
-tags = ["elm"]
+tags = ["elm", "functional programming"]
 hasMath= true
 +++
 

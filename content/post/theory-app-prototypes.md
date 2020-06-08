@@ -4,7 +4,7 @@ date = 2019-04-30T22:28:57-06:00
 draft = false
 markup = "mmark"
 elm = "/js/music.min.js"
-tags = ["elm", "music"]
+tags = ["elm", "functional programming", "music"]
 +++
 
 

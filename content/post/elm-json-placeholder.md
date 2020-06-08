@@ -3,7 +3,7 @@ title = "Fetch data with Elm from Json Placeholder"
 date = 2019-11-19T23:00:53-07:00
 draft = false
 markup = "mmark"
-tags = ["elm"]
+tags = ["elm", "functional programming"]
 +++
 
 - **ellie-app:** https://ellie-app.com/7fxptH4mWMxa1
