@@ -23,6 +23,8 @@ Here are several patterns that I have seen, my own code included.
 ```ts
 function doWork() : boolean {
     // do some SIDE EFFECT
+    let result = doWork();
+    this.some_member_variable = result;
 
     if (success) {
         return true;
