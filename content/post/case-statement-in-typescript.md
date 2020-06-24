@@ -3,6 +3,7 @@ title = "Case Statement in Typescript"
 date = 2020-06-24T12:33:03-06:00
 draft = false
 markup = "mmark"
+tags = ["typescript", "functional programming"]
 +++
 
 One of my favorite features of functional languages like Elm is pattern matching. Here is an example:
@@ -51,7 +52,7 @@ function stateToString(state : State) : string {
 
 Usually TypeScript won't allow bracket notation to access properties of an object. In this case the compiler knows that all cases of `State` are accounted for and can thus be used to index into the object.
 
-Try removing one of the states from the state map and the TypeScript compiler will yell at you.
+Try removing one of the states from `STATE_MAP` and the TypeScript compiler will yell at you.
 
 ```txt
 Element implicitly has an 'any' type because expression of type 'State' can't be used to index type '{ 0: () => string; 1: () => string; }'.
