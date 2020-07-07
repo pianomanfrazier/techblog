@@ -137,6 +137,13 @@ I wrote about this in another post [Exceptions considered harmful](https://piano
 
 Let's use the `Either` type from [purify-ts](https://gigobyte.github.io/purify/adts/Either) to deal with errors in our code. The TypeScript compiler can help us if we give it the right information.
 
+Below is the type signature for Either (almost). See https://github.com/gigobyte/purify/blob/master/src/Either.ts#L3 Neverthrow's [Result](https://github.com/supermacro/neverthrow/blob/master/src/result.ts#L3) type signature is a bit easier to read but has less functionality.
+```ts
+type Either<E, T> = Left<E, T> | Right<T, E>
+```
+
+An `Either` can be one of `Left` which holds the error or it can be `Right` which holds the successful return value.
+
 ```ts
 // might be one of an Error or a result string
 function getUsernameFromDB(id : number) : Either<Error, string> {
@@ -153,7 +160,8 @@ function getUsernameFromDB(id : number) : Either<Error, string> {
     } else {
         return Right(username); // Right is "right" or the correct value
     }
-    // could use Either.encase instead https://gigobyte.github.io/purify/adts/Either#encase
+    // could use Either.encase instead
+    // see https://gigobyte.github.io/purify/adts/Either#encase
     // return Either.encase(() => DB.getUserByID(id));
 }
 
