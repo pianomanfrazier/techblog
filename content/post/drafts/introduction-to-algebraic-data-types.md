@@ -1,7 +1,7 @@
 +++
 title = "Introduction to Algebraic Data Types"
-date = 2020-07-07T08:46:15-06:00
-draft = true
+date = 2020-07-14
+draft = false
 markup = "mmark"
 tags = ["typescript", "functional programming", "elm"]
 +++
@@ -78,8 +78,10 @@ feedAnimal animal =
 
 ## Why are they useful?
 
-- Easy refactors. You can catch problems at compile time.
-- Can constrain the problem domain by types. See [Making Impossible States Impossible](https://www.youtube.com/watch?v=IcgmSRJHu_8).
+- Easier refactors. You can catch problems at compile time.
+- Can constrain the problem domain by the type system. See [Making Impossible States Impossible](https://www.youtube.com/watch?v=IcgmSRJHu_8).
+
+When working on a new feature or a refactor with a strongly typed language I will often start by changing the data structures and then let the compiler tell me where my code fails to compile.
 
 You can do this by leveraging classes and using them as types but it is a lot easier and compact to have a robust type system built into the language. There is usually a lot of boiler code needed to get some better type safety in languages like Java or TypeScript. See [this stackoverflow question](https://stackoverflow.com/questions/21034017/how-do-you-emulate-adts-and-pattern-matching-in-typescript).
 
@@ -127,6 +129,8 @@ const felix : AnimalRecord = {
 ```
 
 ## Immutability
+
+One core idea of functional programming is immutability. You can get more immutability in TypeScript by declaring class members or interfaces as immutable.
 
 - for classes https://www.typescriptlang.org/docs/handbook/classes.html#readonly-modifier
 - for interfaces https://www.typescriptlang.org/docs/handbook/utility-types.html#readonlyt
@@ -176,3 +180,7 @@ result.caseOf({
 caseOf statements for
 - Either https://gigobyte.github.io/purify/adts/Either#caseOf
 - Maybe https://gigobyte.github.io/purify/adts/Maybe#caseOf
+
+When I first encountered ADT in Elm it looked so foreign. Once I got used to using them and seeing I wished that every language I used had them. The compiler now becomes your best friend.
+
+You can get fancier with TypeScript that I did in this post to get something closer to Elms ADTs using *union types*. See https://www.typescriptlang.org/docs/handbook/advanced-types.html#union-types TypeScript also has *type guards* that aid in handling these types.
