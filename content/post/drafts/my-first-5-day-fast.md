@@ -1,7 +1,7 @@
 +++
 title = "My First 5 Day Fast"
-date = 2020-07-10T09:31:07-06:00
-draft = true
+date = 2020-07-10
+draft = false
 markup = "mmark"
 +++
 
@@ -59,13 +59,13 @@ A> Mix in a tall glass of water
 A>
 A> This essentially has no calories and didn't seem to break my fast.
 
-## Day 1
+## Day 1 - Sunday July 5, 2020
 
 Like I said earlier I am very comfortable doing one meal a day. I have built up to doing OMAD for the last few years.
 
 Day 1 felt about like a normal day, although I don't usually go to bed hungry.
 
-## Day 2
+## Day 2 - Monday July 6, 2020
 
 Surprisingly, day 2 was the hardest day of the fast. I felt tired and my brain was pretty foggy. It was a bit hard to concentrate at work.
 
@@ -75,7 +75,7 @@ I did take some pink Himalayan salt and a bit of lemon juice mixed with water. T
 
 By the end of the day I was feeling a lot better and not sluggish and foggy. I went to bed at my normal time around midnight.
 
-## Day 3
+## Day 3 - Tuesday July 7, 2020
 
 I woke up a bit earlier than usual feeling very refreshed around 6:30 a.m. I went for an hour morning walk. I usually go on a half hour walk every morning. I was feeling great so I went a bit longer than usual.
 
@@ -91,7 +91,7 @@ On breaks from work (I work at home due to COVID 19 quarantine) I would go outsi
 
 I had a lot of energy and stayed up a bit later than usual and went to bed around 12:45 a.m.
 
-## Day 4
+## Day 4 - Wednesday July 8, 2020
 
 I woke up again a bit before my 7 o'clock alarm and felt pretty good. I notice that I sleep really well on a fast and that I need less sleep than usual.
 
@@ -113,7 +113,7 @@ I felt much better after the salt and I could sit and stand without feeling ligh
 
 I again went to bed late around 12:45 a.m.
 
-## Day 5
+## Day 5 - Thursday July 9, 2020
 
 Considering I went to bed late I did not expect to be done sleeping around 5:45 a.m. I felt fully refreshed and I didn't get drowsy throughout the day.
 
@@ -164,7 +164,7 @@ This meal might not have been strictly keto, but it was pretty close (I probably
 
 Eating a keto-like diet coming off the fast keeps your insulin low and eases your body back out of the fast. My rule is to avoid breads, chips, cookies and the like. I choose instead a small portion of meat, cheese, any vegetable.
 
-## The day after the breaking fast
+## The day after breaking the fast
 
 Beware not to overdo it the next day as well. I have experienced some gut problems the next day if I eat too much or a bunch of junk. I had a bunch of kettle corn the second day after a fast one year on July 24^th^ (Pioneer Day in Utah) and my guts were not very happy.
 
