@@ -19,7 +19,7 @@ Once a month I usually do a longer 2-3 day fast. Because once a month my faith d
 
 I am already pretty lean so my purpose in fasting is not to lose weight.
 
-There are many benefits to extended fasting such as increased mental clarity, autophagy, cancer prevention, and more. See Dr. Fung's amazing work [The Complete Guid to Fasting](https://www.amazon.com/Complete-Guide-Fasting-Intermittent-Alternate-Day/dp/1628600012). You can also find him on YouTube.
+There are many benefits to extended fasting such as increased mental clarity, autophagy, cancer prevention, and more. See Dr. Fung's amazing work [The Complete Guide to Fasting](https://www.amazon.com/Complete-Guide-Fasting-Intermittent-Alternate-Day/dp/1628600012). You can also find him on YouTube.
 
 Fasting is an ancient practice. You can read about extended fasts in the bible. We have accounts of Jesus, Moses, and Elijah fasting for 40 days.
 
