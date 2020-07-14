@@ -11,13 +11,15 @@ markup = "mmark"
 
 In my faith as a member of The Church of Jesus Christ of Latter-Day Saints we fast once a month. This is a 24 hour fast of no water and no food, commonly known as a black fast or a Jewish fast. I have been doing this monthly fast since I was about 8 years old. We then donate the money we saved on food and contribute to a fund to help the poor and needy. See [Gospel Topics - Fast, Fasting](https://www.churchofjesuschrist.org/study/scriptures/gs/fast-fasting?lang=eng&clang=eng).
 
-A couple of years ago I started experimenting with intermittent fasting and doing extended fasting. My intermittent fasting routine now is either eat one meal a day (OMAD) or eat my first meal around 2-3 and dinner around 6. I will usually do OMAD for 2 or 3 days a week. Sometimes I cheat and eat Sunday breakfast, but that is my usual routine.
+A couple of years ago I started experimenting with intermittent fasting and extended fasting. My intermittent fasting routine now is either eat one meal a day (OMAD) or eat my first meal around 2-3 and dinner around 6. I will usually do OMAD for 2 or 3 days a week. Sometimes I cheat and eat Sunday breakfast, but that is my usual routine.
 
 Once a month I usually do a longer 2-3 day fast. Because once a month my faith does a one day fast as a group, I don't really feel it much of a sacrifice to do a 24 hour fast anymore so I do at least 2 days. I'm not trying to compete with those around me, I just don't feel it much of a sacrifice. I might have already done 3 or 4 OMAD days earlier that week.
 
-## The purpose of the fast
+## The purpose of the extended fast
 
 I am already pretty lean so my purpose in fasting is not to lose weight.
+
+There are many benefits to extended fasting such as increased mental clarity, autophagy, cancer prevention, and more. See Dr. Fung's amazing work [The Complete Guid to Fasting](https://www.amazon.com/Complete-Guide-Fasting-Intermittent-Alternate-Day/dp/1628600012). You can also find him on YouTube.
 
 Fasting is an ancient practice. You can read about extended fasts in the bible. We have accounts of Jesus, Moses, and Elijah fasting for 40 days.
 
@@ -44,7 +46,7 @@ See [scripture search "forty days"](https://www.churchofjesuschrist.org/search?l
 
 ## Preparation
 
-I had been thinking about trying to do a 5 day fast, so last few weeks I have not been doing my daily fasts like I usually do. I also tried to up some of my portions. I've tried in the past but I get to the 3 day mark and feel like I need to end the fast.
+I had been thinking about trying a 5 day fast, so last few weeks I have not been doing my daily fasts like I usually do. I also tried to up some of my portions. I've tried in the past to do 5 days but I get to the 3 day mark and feel like I need to end the fast.
 
 The only thing I had on this fast other than tap water was sea salt and a bit of lemon juice. See my version of [ketorade](#ketorade) recipe.
 
@@ -75,7 +77,7 @@ By the end of the day I was feeling a lot better and not sluggish and foggy. I w
 
 ## Day 3
 
-I woke up a bit earlier than usual feeling very refreshed around 6:30. I went for an hour morning walk. I usually go on a half hour walk every morning. I was feeling great so I went a bit longer than usual.
+I woke up a bit earlier than usual feeling very refreshed around 6:30 a.m. I went for an hour morning walk. I usually go on a half hour walk every morning. I was feeling great so I went a bit longer than usual.
 
 At this point in the fast I started feeling really great. I had a lot of mental clarity and was really productive throughout the day.
 
@@ -85,7 +87,7 @@ It made me think of my relationship with food. Sometimes I eat because I want to
 
 I felt especially more light headed than day 2. From what I've read is that the body sheds salt as it burns through your glycogen stores. At this point I was probably well into full ketosis.
 
-On breaks from work (I work at home due to COVID 19 quarantine) I would go outside and wee my garden. When I would stand up I got really light headed. I figured eventually my body would adjust to I pushed through.
+On breaks from work (I work at home due to COVID 19 quarantine) I would go outside and weed my garden. When I would stand up I got really light headed. I figured eventually my body would adjust so I pushed through.
 
 I had a lot of energy and stayed up a bit later than usual and went to bed around 12:45 a.m.
 
@@ -103,7 +105,7 @@ The first couple of times I did a fast longer than 2 days I would get a strong m
 
 I was again experiencing a lot of light headedness so I did some reading online and most people suggested take in more salt to retain more water. I think I was a bit dehydrated and my blood pressure was low. So I mixed up 1 teaspoon of sea salt in about 2 cups of water and drank that.
 
-**_T.M.I. alert!_** Be careful not to overdo the salt drink because it will flush out your bowels. I didn't know salt water had this effect. The salt water flush (SFW) is part of The Master Cleanse.
+**_T.M.I. alert!_** Be careful not to overdo the salt because it will flush out your bowels. I didn't know salt water had this effect. The salt water flush (SFW) is part of The Master Cleanse.
 
 Anyway I confirmed that my bowels were indeed empty.
 
