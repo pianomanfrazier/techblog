@@ -116,7 +116,7 @@ latexItem = x => `\\item ${x}`
 htmlListHead = x => `<ul>\n${x}\n</ul>`
 htmlItem = x => `<li>${x}</li>`
 
-mdListHead = x => x
+mdListHead = x => x // The identity function
 mdItem = x => `- ${x}`
 
 renderList = headFn => itemFn => list => headFn(list.map(x => itemFn(x)).join('\n'))
