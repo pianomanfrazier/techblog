@@ -110,19 +110,24 @@ How about providing different ways to render a list?
 ```js
 list = ['Fries', 'Hamburger', 'Shake']
 
-latexListHead = x => `\\begin\{list_type\}\n${x}\n\\end\{list_type\}`
+latexListHead = x => `\\begin\{itemize\}\n${x}\n\\end\{itemize\}`
 latexItem = x => `\\item ${x}`
 
 htmlListHead = x => `<ul>\n${x}\n</ul>`
-li = x => `<li>${x}</li>`
+htmlItem = x => `<li>${x}</li>`
+
+mdListHead = x => x
+mdItem = x => `- ${x}`
 
 renderList = headFn => itemFn => list => headFn(list.map(x => itemFn(x)).join('\n'))
 
 latexList = renderList(latexListHead)(latexItem) // LaTeX render function
-webList = renderList(htmlListHead)(li) // HTML render function
+webList = renderList(htmlListHead)(htmlItem) // HTML render function
+mdList = renderList(mdListHead)(mdItem) // Markdown render function
 
 console.log(webList(list))
 console.log(latexList(list))
+console.log(mdList(list))
 ```
 
 Now what if you wanted several styles of lists, like a fancy web list.
@@ -130,10 +135,10 @@ Now what if you wanted several styles of lists, like a fancy web list.
 ```js
 htmlListHead = classes => x => `<ul class='${classes.join(' ')}'>\n${x}\n</ul>`
 
-bigBlueListHead = htmlListHead(['blue', 'big'])
-smallRedListHead = htmlListHead(['red', 'small'])
+bigBlueListHead = htmlListHead(['big', 'blue'])
+smallRedListHead = htmlListHead(['small', 'red'])
 
-webList = renderList(bigBlueListHead)(li)
+webList = renderList(bigBlueListHead)(htmlItem)
 
 console.log(webList(list))
 ```
