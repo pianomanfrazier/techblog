@@ -5,7 +5,7 @@ draft = true
 markup = "mmark"
 +++
 
-In my day to day work as a software engineer I do not have the luxury of using a functional language like Haskell or Elm, however I have learned a lot from Elm that has changed my style when programming in JavaScript or Python. Here is a run-down of some of the concepts I have learned from writing nearly 3000 lines of Elm code.
+In my day to day work as a software engineer I do not have the luxury of using a functional language like Haskell or Elm, however I have learned a lot from Elm that has changed how I program in JavaScript or Python. Here is a run-down of some of the concepts I have learned from writing 3000+ lines of Elm code.
 
 Here are some of my projects written entirely in Elm.
 
@@ -16,6 +16,8 @@ Here are some of my projects written entirely in Elm.
 - [Uke Chord Finder](https://frazierpianostudio.com/resources/ukulele-chord-finder/) - interactive Ukulele chord finder
 
 ## FP Vocabulary
+
+Here is a list of common terms that come up when learning functional programming (FP). I will discuss many of them in this article.
 
 - Pure Function
 - Side Effect
@@ -63,20 +65,22 @@ result = add(2,3) + 5 // result == 10
 result = 5 + 5 // result == 10
 ```
 
-The opposite of referential transparency is **referential opacity**. Or in other words, if the function call cannot be replaced by the output then the function is said to be **referentially opaque**.
+By contrast, if the function call cannot be replaced by the output then the function is said to be **referentially opaque**.
 
 ## No For Loops?
 
-In a pure functional language like Haskell or Elm, you will notice there are no for loops. You must process all lists with `map`, `reduce`, and `filter`.
+In a pure functional language like Haskell or Elm, you will notice there are no for loops. You must process all lists with `map`, `reduce`, and `filter` (among others).
 
 ```js
 list = [1,2,3,4]
-listTimesThree = []
 
+// Imperative
+listTimesThree = []
 for(i = 0; i < list.length; i++) {
     listTimesThree.push(list[i] * 3)
 }
 
+// Declarative
 listTimesThree = list.map(x => x * 3)
 ```
 
@@ -105,7 +109,7 @@ list.map(x => addOne(x)) // [2,3,4,5]
 
 How is currying useful?
 
-How about providing different ways to render a list?
+How about providing different ways to render a list? Currying makes it easy to make functions from other functions.
 
 ```js
 list = ['Fries', 'Hamburger', 'Shake']
@@ -147,11 +151,24 @@ There are other uses for currying like generating a range of math plots. See my 
 
 ## Exception Throwing is a Side Effect
 
+> The reasoning is that I consider exceptions to be no better than “goto’s”, considered harmful since the 1960s, in that they create an abrupt jump from one point of code to another. In fact they are significantly worse than goto’s
+> 
+> 1. **They are invisible in the source code.**
+> 1. **They create too many possible exit points** for a function.
+> 
+Quote: -- Joel Spolsky at [Joel on Software](https://www.joelonsoftware.com/2003/10/13/13/)
+
 I wrote about this topic in a previous blog post [Exceptions Considered Harmful](https://pianomanfrazier.com/post/exceptions-considered-harmful/).
 
 ## JavaScript helper libraries
 
-JavaScript is notorious for an inconstant API. What functions are immutable? This is always made clear in the MDN docs. For example, `map()` creates a new array and `pop()` returns the last element and *mutates* the array. This inconsistency is a mental burden. Therefore there is a need for libraries like [Ramda](https://ramdajs.com/docs/).
+JavaScript is notorious for an inconstant API. What functions are immutable? This is always made clear in the MDN docs. For example, `map()` creates a new array whereas `sort()` and `reverse() *mutate* the array *in place* and returns the mutated array. This inconsistency is a mental burden. Therefore there is a need for libraries like [Ramda](https://ramdajs.com/docs/).
+
+```js
+list = [4,2,3,1]
+sortedList = list.sort()
+console.log(list) // [4,2,3,1] or [1,2,3,4]?
+```
 
 ### JS Libraries
 
@@ -167,8 +184,8 @@ JavaScript is notorious for an inconstant API. What functions are immutable? Thi
 
 ## Other Resources
 
-- [Explain Monads Like I'm Five](https://dev.to/bobbypriambodo/comment/j27)
-- [Why Isn't Functional Programming the Norm? – Richard Feldman](https://youtu.be/QyJZzq0v7Z4)
-- [Lambda Calculus - Fundamentals of Lambda Calculus & Functional Programming in JavaScript](https://youtu.be/3VQ382QG-y4)
 - [A practical guide to functional programming](https://codewords.recurse.com/issues/one/an-introduction-to-functional-programming)
+- [Why Isn't Functional Programming the Norm? – Richard Feldman](https://youtu.be/QyJZzq0v7Z4)
+- [Explain Monads Like I'm Five](https://dev.to/bobbypriambodo/comment/j27)
+- [Lambda Calculus - Fundamentals of Lambda Calculus & Functional Programming in JavaScript](https://youtu.be/3VQ382QG-y4)
 - [Some good discussion and some resources](https://elmbits.com/issue-40-functional-programming/)
