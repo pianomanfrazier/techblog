@@ -1,7 +1,7 @@
 +++
 title = "What Is Functional Programming"
 date = 2020-10-20T09:55:15-06:00
-draft = true
+draft = false
 markup = "mmark"
 +++
 
@@ -162,13 +162,15 @@ I wrote about this topic in a previous blog post [Exceptions Considered Harmful]
 
 ## JavaScript helper libraries
 
-JavaScript is notorious for an inconstant API. What functions are immutable? This is always made clear in the MDN docs. For example, `map()` creates a new array whereas `sort()` and `reverse() *mutate* the array *in place* and returns the mutated array. This inconsistency is a mental burden. Therefore there is a need for libraries like [Ramda](https://ramdajs.com/docs/).
+JavaScript is notorious for an inconstant API. What functions are immutable? For example, `map()` creates a new array whereas `sort()` and `reverse()` *mutate* the array *in place* and returns the mutated array. This inconsistency is a mental burden. Therefore there is a need for libraries like [Ramda](https://ramdajs.com/docs/).
 
 ```js
 list = [4,2,3,1]
 sortedList = list.sort()
 console.log(list) // [4,2,3,1] or [1,2,3,4]?
 ```
+
+Compare with [Ramda's sort](https://ramdajs.com/docs/#sort).
 
 ### JS Libraries
 
@@ -184,8 +186,8 @@ console.log(list) // [4,2,3,1] or [1,2,3,4]?
 
 ## Other Resources
 
-- [A practical guide to functional programming](https://codewords.recurse.com/issues/one/an-introduction-to-functional-programming)
-- [Why Isn't Functional Programming the Norm? – Richard Feldman](https://youtu.be/QyJZzq0v7Z4)
-- [Explain Monads Like I'm Five](https://dev.to/bobbypriambodo/comment/j27)
-- [Lambda Calculus - Fundamentals of Lambda Calculus & Functional Programming in JavaScript](https://youtu.be/3VQ382QG-y4)
-- [Some good discussion and some resources](https://elmbits.com/issue-40-functional-programming/)
+- [[Blog Post] A practical guide to functional programming](https://codewords.recurse.com/issues/one/an-introduction-to-functional-programming)
+- [[YouTube] Why Isn't Functional Programming the Norm? – Richard Feldman](https://youtu.be/QyJZzq0v7Z4)
+- [[Forum Post] Explain Monads Like I'm Five](https://dev.to/bobbypriambodo/comment/j27)
+- [[YouTube] Lambda Calculus - Fundamentals of Lambda Calculus & Functional Programming in JavaScript](https://youtu.be/3VQ382QG-y4)
+- [[Blog Post] Some good discussion and some resources](https://elmbits.com/issue-40-functional-programming/)
