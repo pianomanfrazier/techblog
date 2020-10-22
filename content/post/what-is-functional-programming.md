@@ -3,6 +3,7 @@ title = "What Is Functional Programming"
 date = 2020-10-20T09:55:15-06:00
 draft = false
 markup = "mmark"
+tags = ["functional programming", "javascript"]
 +++
 
 In my day to day work as a software engineer I do not have the luxury of using a functional language like Haskell or Elm, however I have learned a lot from Elm that has changed how I program in JavaScript or Python. Here is a run-down of some of the concepts I have learned from writing 3000+ lines of Elm code.
