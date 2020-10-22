@@ -7,12 +7,30 @@ markup = "mmark"
 
 {{< profile src="/img/profile.png" alt="Ryan Profile Picture" >}}
 
+### Hi there 👋
+
 In my previous life I aspired to be a concert pianist. I played lots of piano and traveled a bit. Hear me play a [Beethoven Trio](https://youtu.be/psRoQK_j0pY), [Copland](https://youtu.be/T8n5tYnc5sY), and a [Liszt Concerto](https://youtu.be/LePrhMvuE1k).
 
-I have 3 degrees, a bachelor's of Music in Piano Performance, a Master's degree in Piano Performance and Pedagogy, and finally a 2^nd^ bachelor's in Computer Science (Spring 2018). I am *done* with school, but not done learning. :wink:
+I have 3 degrees, a bachelor's of Music in Piano Performance, a Master's degree in Piano Performance and Pedagogy, and finally a 2nd bachelor's in Computer Science (Spring 2018). I am done with school, but not done learning. 😉
 
-My major school projects were building a compiler and writing a [Lemming's Clone for the browser](https://github.com/pianomanfrazier/lemmings-clone).
+- I'm currently learning GoLang
+- Learning to speak Portuguese, fluent in Mandarin Chinese
+- Ask me about fermenting jalapeños
+- I love to hike the mountains of Northern Utah
+- I'm currently reading *Crime and Punishment* by Fyodor Dostoevsky 
 
-Currently I work on a fairly mature Java web application with Ext JS on the front end. I am leading the effort to rewrite portions of the front end in Vue.js and Vuetify to work on mobile devices.
+### My Writing
 
-My new favorite thing is Elm and functional programming. I am in the middle of writing a learning platform for music theory in Elm. The app is like Khan Academy and Duo Lingo but for music theory. It will be epic.
+In my [Elm Calculator Book](https://pianomanfrazier.com/post/elm-calculator-book/01-intro/) I walk through building a calculator using the Elm programming language.
+
+Some blog posts
+
+- [Write a book with Markdown](https://pianomanfrazier.com/post/write-a-book-with-markdown/)
+- [Comparing Svelte and PencilJS](https://pianomanfrazier.com/post/comparing-svelte-stencil/)
+- [Render sheet music with Markdown](https://pianomanfrazier.com/post/lilypond-in-markdown/)
+
+### My Favorite side projects
+
+- https://knowyourtheory.com all written in Elm, a pure functional compile to JS language
+- [Music Scale Explorer](https://frazierpianostudio.com/resources/scale-explorer/) again written all in Elm
+- [Subscription Box Managing App](https://github.com/pianomanfrazier/popcorncove_subscriptions) see demo video [here](https://youtu.be/P_8gmr_Ol-4)
