@@ -128,7 +128,7 @@ Now we need to handle that message in our update function.
 ```elm
 update : Msg -> Model -> Model
 update msg =
-    type msg of
+    case msg of
         InputNumber num ->
             { model | currentNum = num }
 ```
