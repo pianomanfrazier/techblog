@@ -1,13 +1,14 @@
 +++
 title = "My Side Projects"
 lastUpdate = true
-date = "2019-09-23"
+date = "2020-08-13"
 markup = "mmark"
 +++
 
 ## Table of Contents
 
 - [KnowYourTheory](#knowyourtheory)
+- [Frazier Piano Studio](#frazier-piano-studio)
 - [Elm Piano Teacher](#elm-piano-teacher)
 - [Lilypond in Markdown](#lilypond-in-markdown)
 - [Popcorn Cove Subscriptions](#popcorn-cove-subscriptions)
@@ -18,8 +19,7 @@ markup = "mmark"
 
 [![Know Your Theory app thumbnail](/img/projects/know-your-theory-thumbnail.png)](https://app.knowyourtheory.com)
 
-- The Website: https://knowyourtheory.com
-- The app: https://app.knowyourtheory.com
+- The app: https://knowyourtheory.com
 
 This is the music learning platform I have been working on since fall of 2018. The front end is all in Elm.
 
@@ -33,14 +33,31 @@ I am currently working and planning out the backend. My current plan is the foll
 
 And [here](https://www.knowyourtheory.com/posts/planned-features/) are some of my ideas for my next features.
 
+## Frazier Piano Studio
+
+This is my piano teaching website https://frazierpianostudio.com. I post my teaching resources and blog a little bit. 
+
+[![Frazier Piano Studio](/img/projects/frazier-piano-studio-thumbnail.png)](https://frazierpianostudio.com)
+
+I also put up my coding music experiments and visualizations on this site. Here are some of them.
+
+### Music Scale Explorer
+
+[![Music Scale Explorer](/img/projects/music-scale-explorer-thumbnail.png)](https://frazierpianostudio.com/resources/scale-explorer/)
+
+### Circle of Fifths Explorer
+
+[![Circle of Fifths Explorer](/img/projects/circle-of-fifths-explorer-thumbnail.png)](https://frazierpianostudio.com/resources/circle-of-fifths-explorer/)
 
 ## Elm Piano Teacher
 
-![Elm Piano Teacher](/img/projects/elm-piano-teacher.png)
+[![Elm Piano Teacher](/img/projects/elm-piano-teacher.png)](https://elm-piano-teacher.netlify.app)
 
 This little app is built in Elm to demonstrate music concepts for my [Elm Conf 2019 talk](/speaking#elm-conf-2019).
 
-I needed an audio and visual way to talk about music stuffs with a keyboard. It uses the WebMIDI api available in Chrome. It also uses a lot of the tooling like note and keyboard rendering I have built up for [app.knowyourtheory.com](https://app.knowyourtheory.com).
+You will need a midi keyboard plugged into your computer and use a browser, like Chrome, that supports the web midi api.
+
+I needed an audio and visual way to talk about music stuffs with a keyboard. It uses the WebMIDI api available in Chrome. It also uses a lot of the tooling like note and keyboard rendering I have built up for [knowyourtheory.com](https://knowyourtheory.com).
 
 The things I added were
 
