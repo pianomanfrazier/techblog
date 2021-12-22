@@ -3,6 +3,7 @@ title = "Microbit Asteroids"
 date = 2021-12-21T14:24:22-07:00
 draft = false
 markup = "mmark"
+tags = ["microbit", "python"]
 +++
 
 We will be using the [Mu Editor](https://codewith.mu/).
@@ -14,8 +15,8 @@ Here is the final version of this simple game.
 Here is our plan of attack.
 
 - create controllable rocket
-- make astroid fall from the sky
-- check if game over (astroid collides with our rocket)
+- make asteroid fall from the sky
+- check if game over (asteroid collides with our rocket)
 
 ## TLDR;
 
@@ -197,7 +198,7 @@ while True:
 
 Try reseting the microbit several times with the button on the back and notice how the asteroid starts at different positions.
 
-Now we need the astroid to fall down and then when it goes off the screen start over at the top again. We also need to make sure that the astroid doesn't try to draw off screen or our program will crash just like our rocket crashed our program before.
+Now we need the asteroid to fall down and then when it goes off the screen start over at the top again. We also need to make sure that the asteroid doesn't try to draw off screen or our program will crash just like our rocket crashed our program before.
 
 ```py
 from microbit import *
@@ -219,7 +220,7 @@ while True:
     if asteroidY < 4:
         asteroidY = asteroidY + 1
     else:
-        # reset the astroid
+        # reset the asteroid
         asteroidY = 0
         asteroidX = randint(0,4)
     
@@ -228,7 +229,7 @@ while True:
     display.set_pixel(asteroidX, asteroidY, 9)
 ```
 
-You'll notice now that we almost have a working game. We now need to detect if the astroid crashed into your rocket.
+You'll notice now that we almost have a working game. We now need to detect if the asteroid crashed into your rocket.
 
 ## Game Over
 
@@ -271,8 +272,8 @@ while True:
 There are a bunch of other features you could add to this game. Here are some ideas.
 
 - connect up a speaker and make music/sound on asteroid collision
-- keep score (either a timer or number of astroids missed)
-- add multiple astroids
+- keep score (either a timer or number of asteroids missed)
+- add multiple asteroids
 - allow the rocket to shoot with A+B button presses
 - use the microbit internal tilt sensor to control the rocket
 
@@ -292,7 +293,7 @@ if asteroidX == rocketX and asteroidY == rocketY:
 
 ## Keep Score
 
-To keep store we'll count the astroids that go by. For this we need another variable to count the astroids.
+To keep score we'll count the asteroids that go by. For this we need another variable to count the asteroids.
 
 ```py
 score = 0
